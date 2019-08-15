@@ -1,0 +1,286 @@
+    
+          <script>
+        
+        $( document ).ready(function() {
+        
+            jetztmonat = 0;
+            getkalender();
+        
+            $(document).on("click",'.eintragsstift',function () {
+                   $('.modaleintragen').modal('show');
+                   var datum = $('.mvccontentdatum').data('sqldatum');
+                   $('.eintragdatum').val(datum);
+            });
+            
+            $(document).on("click",'.neueneintragabsenden',function () {
+            var db =  $('select[name="db_select"]').val();
+            var fach =  $('input[name="name"]').val();
+            var beschreibung =  $('textarea[name="beschreibung"]').val();
+            var datum =  $('input[name="datum"]').val();
+             
+                $.post( "https://www.martinshare.com/api/startapi.php/posteintrag/", {
+                    
+                datum: datum, 
+                dbw: db, 
+                fach: fach, 
+                beschreibung: beschreibung })
+                
+                .done(function( data ) {
+                    getkalender();
+                    $('.modaleintragen').modal('hide');
+                });
+            });
+           
+            var eintragsid;
+            var eintragtimestamp;
+            
+            $(document).on("click",'.mvccontentfach ',function () {
+                
+            eintragsid = $(this).parents().data('id');
+            $('.modalupdate').modal('show');
+            var datum = $(this).parents().data('sqldatum');
+            $('input[name="newdatum"]').val(datum);
+            var newname = $(this).text();
+            $('input[name="newname"]').val(newname);
+            var newbeschreibung = $(this).parents().children('.mvccontentbeschreibung').text();
+            $('textarea[name="newbeschreibung"]').val(newbeschreibung);
+            });
+            
+            $(document).on("click",'.updateeintragabsenden',function () {
+                var newfach =  $('input[name="newname"]').val();
+                var newbeschreibung =  $('textarea[name="newbeschreibung"]').val();
+                var thisid = eintragsid;
+                var newdatum =  $('input[name="newdatum"]').val();
+                 
+                $.post( "https://www.martinshare.com/api/startapi.php/updateeintrag/", {
+                eintragid: thisid, 
+                newname: newfach, 
+                newbeschreibung: newbeschreibung, 
+                neweintragdatum: newdatum })
+                
+                .done(function( data ) {
+                    getkalender();
+                    $('.modalupdate').modal('hide');
+                });
+            });
+            
+            $(document).on("click",".mvccontentdeleted", function () {
+               
+               var clicked = $(this);
+               
+               
+                var userid = <?php echo $user->data()->id ?>;
+                var id = $(this).data("id")
+               
+                BootstrapDialog.show({
+                    type: BootstrapDialog.TYPE_DANGER,
+                    title: 'Eintrag löschen?',
+                    message: 'Möchtest du diesen Eintrag löschen?',
+                    buttons: [{
+                        label: 'Abbrechen',
+                        action: function(dialog) {
+                            dialog.close();
+                        }
+                    }, {
+                        cssClass: 'btn-danger',
+                        label: 'Löschen',
+                        action: function(dialog) {
+                            $.post("https://www.martinshare.com/api/startapi.php/deleteeintrag/", {userid: userid, id: id}, function(data) {
+                                getkalender();
+                                dialog.close();
+                            });
+                           
+                        }
+                    }]
+                });
+                
+            });
+            
+            $(document).on("click",".mvccontenthistory", function () {
+               
+                var userid = <?php echo $user->data()->id ?>;
+                var id = $(this).data("id")
+               
+                $.post("https://www.martinshare.com/api/startapi.php/getversionhistory/", {userid: userid, id: id}, function(data) {
+                    
+                    var message = "";
+                    
+                    $.each(data, function(i, el) {
+                        
+                        message +=
+                       
+                        '<div class="row mobilemessage"> \
+                            <div style=" ' + "" + '" class="col-xs-12"> \
+                                <h3>Fach: '+ el.name + " " + '<img style="width: 24px;" src="../../images/typimg/'+el.typ+'icon.png">' + ' </h3> \
+                                <p>Beschreibung: '+ el.beschreibung +' \
+                                </p> \
+                                <small><i><span>Erstellt: '+ new XDate(el.erstelldatum).toString('dd.MM.yyyy HH:mm:ss ') +' \
+                                </span></i> </small>\
+                            </div> \
+                        </div> \
+                        <hr/>'
+                        ;
+                        
+                    });
+                    
+                        BootstrapDialog.show({
+                            type: BootstrapDialog.TYPE_INFO,
+                            title: "Verlauf",
+                            message: message,
+                            buttons: [{
+                                label: 'Schließen',
+                                action: function(dialog) {
+                                    dialog.close();
+                                }
+                            }]
+                        });
+                    }, "json");
+               
+            });
+            
+    
+            $(document).on("click",'.mvcday',function () {
+                $( "span" ).removeClass( "focused" );
+                $(this).addClass("focused");
+               
+                $(".mvctabs").show('fast');
+                var datume = $(this).data('timestamp');
+                geteintrag(datume);
+                    
+                    
+            });
+                
+            $(document).on("click",'.backmonth',function () {
+            jetztmonat--; 
+            getkalender();
+            });
+            
+            $(document).on("click",'.forwardmonth',function () {
+            jetztmonat++;
+            getkalender();
+            });
+            
+        
+            $(document).on("click",'.mvcdaytab',function () {
+                $('.mvctabactive').removeClass("mvctabactive");
+                $(this).addClass("mvctabactive");
+                var timestamp = Math.round(new Date().getTime() / 1000);
+                timestamp += $(this).data('day');
+                
+                $.post("https://www.martinshare.com/api/startapi.php/getformatteddatefromtimestamp/", {timestampp: timestamp})
+                    .done(function( data ) {
+                        geteintrag(data);
+                        
+                        $( "span" ).removeClass( "focused" );
+                        $( "span[data-timestamp=" + data + "]").addClass("focused");
+                        
+                    });
+            });
+            
+            
+            /* SUCHE --------------------------------- */
+            
+               
+            var calcontent = "";
+            var searching = false;
+            var mvcsearchbar = '<span class="mvccontentdatum">\
+                                    <div class="form-group" style="padding: 5px 15px 5px 15px;"> \
+                                        <input type="text" class="form-control mvcsearchbar" placeholder="Suchen..."> \
+                                    </div> \
+                                        \
+                                    <button type="submit" class="btn btn-default mvcsearch"><i class="glyphicon glyphicon-search"></i></button> \
+                                    <button type="submit" class="btn btn-default mvcsearchbuttonclose"><i class="glyphicon glyphicon-remove"></i></button> \
+                                    <br> \
+                                </span> \
+                                <div class="mvcsearchresults"> \
+                                </div> \
+                                ';
+                
+                $(document).on("click",'.mvcsearchshowbutton',function () {
+                    
+                 
+                    if(searching == false) {
+                        searching = true;
+                        calcontent = $( ".mvccontent" ).html();
+                        $( ".mvccontent" ).empty();
+                        $(mvcsearchbar).hide().appendTo(".mvccontent" ).show('fast');
+                        
+                        $(".mvctabs").hide();
+                    } else {
+                         
+                        $( ".mvccontent" ).empty();
+                        $(".mvccontent").append(calcontent);
+                        searching = false;
+                        
+                        $(".mvctabs").show('fast');
+                    }
+                
+                });
+                
+                $(document).on("click",'.mvcsearchbuttonclose',function () {
+                    
+                    $( ".mvccontent" ).empty();
+                    $(".mvccontent").append(calcontent);
+                    searching = false;
+                    $(".mvctabs").show('fast');
+                });
+            
+                $(document).on("click",'.mvcsearch',function () {
+                    
+                    $( ".mvcsearchresults" ).empty();
+                    getsuchergebnisse($( ".mvcsearchbar").val());
+                
+                });
+                
+                
+            
+        });
+        
+            function getsuchergebnisse( suchstring ) {
+                    $.post( "https://www.martinshare.com/api/startapi.php/getkalendersearchresults/", { suchstring: suchstring })
+                        .done(function( data ) {
+                            $('.mvcsearchresults').html(data);
+                        });
+            }
+
+            function geteintrag( datum ) {
+                loadingscreen(true);
+                $.post( "https://www.martinshare.com/api/startapi.php/getkalendereintrag/", {datum: datum })
+                    .done(function( data ) {
+                        loadingscreen(false);
+                        $('.mvccontent').html(data);
+                    });
+            }
+        
+            function loadingscreen( active ) {
+                if(active) {
+                    $('.mvccontent').addClass("spinner");
+                            $('.mvccontent').html('<span class="mvccontentdatum">-</span><span class="mvcnocontent" > Wird geladen..</span> <div class="mvcloadingimg"></div>');
+                } else {
+                    $('.mvccontent').removeClass( "spinner" );
+                }
+            }
+            
+            function getkalender(datum) {
+            if(!datum) {
+                datum = '<?php echo date('Y-m-d',strtotime('today'));?>';
+            } 
+                stop();
+                $.post( "https://www.martinshare.com/api/startapi.php/getkalender/", { zeit: datum, monat: jetztmonat})
+                .done(function( data ) {
+                    $('.mvcalender').html(data);
+                    
+                    var datume = '<?php echo date('Y-m-d',strtotime('+1 day'));?>';
+                    
+                    $( "span" ).removeClass( "focused" );
+                    
+                    $( "span[data-timestamp=" + datume + "]").addClass("focused");
+                    
+                    geteintrag(datume);
+                    
+                });
+            }
+            
+
+        </script>
+    

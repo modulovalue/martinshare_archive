@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4603B9851B164DCF00D3F3E1 /* WebViewLoadProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4603B9841B164DCF00D3F3E1 /* WebViewLoadProtocol.swift */; };
+		462AAE8C1B14BD0A003E5AA3 /* ConnectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462AAE8B1B14BD0A003E5AA3 /* ConnectionProtocol.swift */; };
+		46478F3E1B1A360B00AE0E6B /* EditEintragController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46478F3D1B1A360B00AE0E6B /* EditEintragController.swift */; };
+		46478F431B1A4D3700AE0E6B /* EintragenProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46478F421B1A4D3700AE0E6B /* EintragenProtocol.swift */; };
+		46478F451B1A772900AE0E6B /* GetDateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46478F441B1A772900AE0E6B /* GetDateProtocol.swift */; };
+		46478F471B1A77BB00AE0E6B /* WaehleDatumController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46478F461B1A77BB00AE0E6B /* WaehleDatumController.swift */; };
+		464960D71B1B3F9F005AE5E2 /* NeuerEintragController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464960D61B1B3F9F005AE5E2 /* NeuerEintragController.swift */; };
+		46539F8F1B17B062001DA343 /* NSCalendar+RSDFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 46539F811B17B062001DA343 /* NSCalendar+RSDFAdditions.m */; };
+		46539F901B17B062001DA343 /* RSDFDatePickerCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46539F841B17B062001DA343 /* RSDFDatePickerCollectionView.m */; };
+		46539F911B17B062001DA343 /* RSDFDatePickerCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 46539F861B17B062001DA343 /* RSDFDatePickerCollectionViewLayout.m */; };
+		46539F921B17B062001DA343 /* RSDFDatePickerDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 46539F881B17B062001DA343 /* RSDFDatePickerDayCell.m */; };
+		46539F931B17B062001DA343 /* RSDFDatePickerDaysOfWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46539F8A1B17B062001DA343 /* RSDFDatePickerDaysOfWeekView.m */; };
+		46539F941B17B062001DA343 /* RSDFDatePickerMonthHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 46539F8C1B17B062001DA343 /* RSDFDatePickerMonthHeader.m */; };
+		46539F951B17B062001DA343 /* RSDFDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46539F8E1B17B062001DA343 /* RSDFDatePickerView.m */; };
+		46539F971B17BF8E001DA343 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46539F961B17BF8E001DA343 /* NSDateExtension.swift */; };
+		466BE5731B163B9B0010C04A /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466BE5721B163B9B0010C04A /* CAPSPageMenu.swift */; };
+		468498031B17F4A000A77665 /* ShowDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468498021B17F4A000A77665 /* ShowDetailController.swift */; };
+		46A451EC1B18F0A90029690A /* Eintraege.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A451EB1B18F0A90029690A /* Eintraege.swift */; };
+		46A451F11B1903FB0029690A /* EintragTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A451F01B1903FB0029690A /* EintragTree.swift */; };
+		46A451F31B192BA30029690A /* DayOverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A451F21B192BA30029690A /* DayOverviewController.swift */; };
+		46A451F51B19462A0029690A /* DecodeHTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A451F41B19462A0029690A /* DecodeHTML.swift */; };
+		46C5D1551B17913600881D85 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C5D1541B17913600881D85 /* HeaderCell.swift */; };
+		46C5D1571B17920700881D85 /* MonthHeaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C5D1561B17920700881D85 /* MonthHeaderProtocol.swift */; };
+		46D087671B1488A9003C3023 /* VertretungsplanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D087661B1488A9003C3023 /* VertretungsplanController.swift */; };
+		46D0876D1B14896A003C3023 /* StundenplanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D0876C1B14896A003C3023 /* StundenplanController.swift */; };
+		46DE3C381B1DE6D00021A2A8 /* lizenz.txt in Resources */ = {isa = PBXBuildFile; fileRef = 46DE3C371B1DE6D00021A2A8 /* lizenz.txt */; };
+		46E0EE5E1B1725F800AA7B7E /* MarkierungsEinstellungController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0EE5D1B1725F800AA7B7E /* MarkierungsEinstellungController.swift */; };
+		46E0EE651B1735E300AA7B7E /* colorPalette.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46E0EE641B1735E300AA7B7E /* colorPalette.plist */; };
+		46E0EE691B17380F00AA7B7E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0EE681B17380F00AA7B7E /* UIColorExtension.swift */; };
+		46E20C871B134E94001BD7BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E20C861B134E94001BD7BF /* AppDelegate.swift */; };
+		46E20C8A1B134E94001BD7BF /* Martinshare.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46E20C881B134E94001BD7BF /* Martinshare.xcdatamodeld */; };
+		46E20C8F1B134E94001BD7BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E20C8D1B134E94001BD7BF /* Main.storyboard */; };
+		46E20C911B134E94001BD7BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46E20C901B134E94001BD7BF /* Images.xcassets */; };
+		46E20C941B134E94001BD7BF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46E20C921B134E94001BD7BF /* LaunchScreen.xib */; };
+		46E20CA01B134E94001BD7BF /* MartinshareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E20C9F1B134E94001BD7BF /* MartinshareTests.swift */; };
+		46E20CAE1B134F12001BD7BF /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E20CAD1B134F12001BD7BF /* LoginController.swift */; };
+		46E20CBB1B13788E001BD7BF /* MainScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E20CBA1B13788E001BD7BF /* MainScreenController.swift */; };
+		46E20CBD1B137DA1001BD7BF /* EinstellungenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E20CBC1B137DA1001BD7BF /* EinstellungenController.swift */; };
+		46E20CBF1B138567001BD7BF /* KalenderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E20CBE1B138567001BD7BF /* KalenderController.swift */; };
+		46E20CD71B1393C3001BD7BF /* MartinshareAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E20CD61B1393C3001BD7BF /* MartinshareAPI.swift */; };
+		46E20CD91B139561001BD7BF /* Prefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E20CD81B139561001BD7BF /* Prefs.swift */; };
+		46E20D031B13AA91001BD7BF /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E20D021B13AA91001BD7BF /* LoginProtocol.swift */; };
+		46E20D091B13AE5F001BD7BF /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E20D081B13AE5F001BD7BF /* SwiftyJSON.swift */; };
+		46E20D0C1B13B55B001BD7BF /* IsLoggedInProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E20D0B1B13B55B001BD7BF /* IsLoggedInProtocol.swift */; };
+		46E215181B188F100061661B /* EintragDataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E215171B188F100061661B /* EintragDataContainer.swift */; };
+		46E2151C1B18967D0061661B /* GetEintraegeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E2151B1B18967D0061661B /* GetEintraegeProtocol.swift */; };
+		46E2151E1B18998C0061661B /* UebersichtController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E2151D1B18998C0061661B /* UebersichtController.swift */; };
+		46E229901B160CF700115AF7 /* PlanHolderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E2298F1B160CF700115AF7 /* PlanHolderController.swift */; };
+		46E328971B6A6169000B9235 /* Alamofire in Resources */ = {isa = PBXBuildFile; fileRef = 46E328961B6A6169000B9235 /* Alamofire */; };
+		46E328991B6A6191000B9235 /* Alamofire-master in Resources */ = {isa = PBXBuildFile; fileRef = 46E328981B6A6191000B9235 /* Alamofire-master */; };
+		46E4D8A11B1CE76A00BC2859 /* InfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E4D8A01B1CE76A00BC2859 /* InfoController.swift */; };
+		46E575A31B174D0E00E9556E /* SwiftOverlays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E575A21B174D0E00E9556E /* SwiftOverlays.swift */; };
+		46E5A05B1B63B22C003DD2D1 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E5A04D1B63B22C003DD2D1 /* Alamofire.swift */; };
+		46E5A05C1B63B22C003DD2D1 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E5A04E1B63B22C003DD2D1 /* Manager.swift */; };
+		46E5A05D1B63B22C003DD2D1 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E5A04F1B63B22C003DD2D1 /* ParameterEncoding.swift */; };
+		46E5A05E1B63B22C003DD2D1 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E5A0501B63B22C003DD2D1 /* Request.swift */; };
+		46E5A05F1B63B22C003DD2D1 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E5A0521B63B22C003DD2D1 /* Download.swift */; };
+		46E5A0601B63B22C003DD2D1 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E5A0531B63B22C003DD2D1 /* ResponseSerialization.swift */; };
+		46E5A0611B63B22C003DD2D1 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E5A0541B63B22C003DD2D1 /* Upload.swift */; };
+		46E5A0621B63B22C003DD2D1 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E5A0551B63B22C003DD2D1 /* Validation.swift */; };
+		46E5A0651B63B345003DD2D1 /* AlamofireStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E5A0641B63B345003DD2D1 /* AlamofireStruct.swift */; };
+		46E5A0661B63B45E003DD2D1 /* Alamofire.h in Sources */ = {isa = PBXBuildFile; fileRef = 46E5A0571B63B22C003DD2D1 /* Alamofire.h */; };
+		46E87BAF1B5ED970005BA2E1 /* BPCompatibleAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E87BAD1B5ED970005BA2E1 /* BPCompatibleAlertAction.swift */; };
+		46E87BB01B5ED970005BA2E1 /* BPCompatibleAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E87BAE1B5ED970005BA2E1 /* BPCompatibleAlertController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46E20C9A1B134E94001BD7BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46E20C791B134E94001BD7BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46E20C801B134E94001BD7BF;
+			remoteInfo = Martinshare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4603B9841B164DCF00D3F3E1 /* WebViewLoadProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewLoadProtocol.swift; sourceTree = "<group>"; };
+		462AAE8B1B14BD0A003E5AA3 /* ConnectionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionProtocol.swift; sourceTree = "<group>"; };
+		46478F3D1B1A360B00AE0E6B /* EditEintragController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditEintragController.swift; sourceTree = "<group>"; };
+		46478F421B1A4D3700AE0E6B /* EintragenProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EintragenProtocol.swift; sourceTree = "<group>"; };
+		46478F441B1A772900AE0E6B /* GetDateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetDateProtocol.swift; sourceTree = "<group>"; };
+		46478F461B1A77BB00AE0E6B /* WaehleDatumController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaehleDatumController.swift; sourceTree = "<group>"; };
+		464960D61B1B3F9F005AE5E2 /* NeuerEintragController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeuerEintragController.swift; sourceTree = "<group>"; };
+		46539F7F1B17B061001DA343 /* Martinshare-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Martinshare-Bridging-Header.h"; sourceTree = "<group>"; };
+		46539F801B17B062001DA343 /* NSCalendar+RSDFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+RSDFAdditions.h"; sourceTree = "<group>"; };
+		46539F811B17B062001DA343 /* NSCalendar+RSDFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+RSDFAdditions.m"; sourceTree = "<group>"; };
+		46539F821B17B062001DA343 /* RSDayFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDayFlow.h; sourceTree = "<group>"; };
+		46539F831B17B062001DA343 /* RSDFDatePickerCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDFDatePickerCollectionView.h; sourceTree = "<group>"; };
+		46539F841B17B062001DA343 /* RSDFDatePickerCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDFDatePickerCollectionView.m; sourceTree = "<group>"; };
+		46539F851B17B062001DA343 /* RSDFDatePickerCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDFDatePickerCollectionViewLayout.h; sourceTree = "<group>"; };
+		46539F861B17B062001DA343 /* RSDFDatePickerCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDFDatePickerCollectionViewLayout.m; sourceTree = "<group>"; };
+		46539F871B17B062001DA343 /* RSDFDatePickerDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDFDatePickerDayCell.h; sourceTree = "<group>"; };
+		46539F881B17B062001DA343 /* RSDFDatePickerDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDFDatePickerDayCell.m; sourceTree = "<group>"; };
+		46539F891B17B062001DA343 /* RSDFDatePickerDaysOfWeekView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDFDatePickerDaysOfWeekView.h; sourceTree = "<group>"; };
+		46539F8A1B17B062001DA343 /* RSDFDatePickerDaysOfWeekView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDFDatePickerDaysOfWeekView.m; sourceTree = "<group>"; };
+		46539F8B1B17B062001DA343 /* RSDFDatePickerMonthHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDFDatePickerMonthHeader.h; sourceTree = "<group>"; };
+		46539F8C1B17B062001DA343 /* RSDFDatePickerMonthHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDFDatePickerMonthHeader.m; sourceTree = "<group>"; };
+		46539F8D1B17B062001DA343 /* RSDFDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDFDatePickerView.h; sourceTree = "<group>"; };
+		46539F8E1B17B062001DA343 /* RSDFDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDFDatePickerView.m; sourceTree = "<group>"; };
+		46539F961B17BF8E001DA343 /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
+		466BE5721B163B9B0010C04A /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
+		468498021B17F4A000A77665 /* ShowDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowDetailController.swift; sourceTree = "<group>"; };
+		46A451EB1B18F0A90029690A /* Eintraege.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Eintraege.swift; sourceTree = "<group>"; };
+		46A451F01B1903FB0029690A /* EintragTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EintragTree.swift; sourceTree = "<group>"; };
+		46A451F21B192BA30029690A /* DayOverviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayOverviewController.swift; sourceTree = "<group>"; };
+		46A451F41B19462A0029690A /* DecodeHTML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodeHTML.swift; sourceTree = "<group>"; };
+		46C5D1541B17913600881D85 /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		46C5D1561B17920700881D85 /* MonthHeaderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthHeaderProtocol.swift; sourceTree = "<group>"; };
+		46D087661B1488A9003C3023 /* VertretungsplanController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VertretungsplanController.swift; sourceTree = "<group>"; };
+		46D0876C1B14896A003C3023 /* StundenplanController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StundenplanController.swift; sourceTree = "<group>"; };
+		46DE3C371B1DE6D00021A2A8 /* lizenz.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lizenz.txt; sourceTree = "<group>"; };
+		46E0EE5D1B1725F800AA7B7E /* MarkierungsEinstellungController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkierungsEinstellungController.swift; sourceTree = "<group>"; };
+		46E0EE641B1735E300AA7B7E /* colorPalette.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colorPalette.plist; sourceTree = "<group>"; };
+		46E0EE681B17380F00AA7B7E /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		46E20C811B134E94001BD7BF /* Martinshare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Martinshare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46E20C851B134E94001BD7BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46E20C861B134E94001BD7BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46E20C891B134E94001BD7BF /* Martinshare.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Martinshare.xcdatamodel; sourceTree = "<group>"; };
+		46E20C8E1B134E94001BD7BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46E20C901B134E94001BD7BF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		46E20C931B134E94001BD7BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		46E20C991B134E94001BD7BF /* MartinshareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MartinshareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46E20C9E1B134E94001BD7BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46E20C9F1B134E94001BD7BF /* MartinshareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartinshareTests.swift; sourceTree = "<group>"; };
+		46E20CAD1B134F12001BD7BF /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		46E20CBA1B13788E001BD7BF /* MainScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenController.swift; sourceTree = "<group>"; };
+		46E20CBC1B137DA1001BD7BF /* EinstellungenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EinstellungenController.swift; sourceTree = "<group>"; };
+		46E20CBE1B138567001BD7BF /* KalenderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KalenderController.swift; sourceTree = "<group>"; };
+		46E20CD61B1393C3001BD7BF /* MartinshareAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MartinshareAPI.swift; sourceTree = "<group>"; };
+		46E20CD81B139561001BD7BF /* Prefs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prefs.swift; sourceTree = "<group>"; };
+		46E20D021B13AA91001BD7BF /* LoginProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
+		46E20D081B13AE5F001BD7BF /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		46E20D0B1B13B55B001BD7BF /* IsLoggedInProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsLoggedInProtocol.swift; sourceTree = "<group>"; };
+		46E215171B188F100061661B /* EintragDataContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EintragDataContainer.swift; sourceTree = "<group>"; };
+		46E2151B1B18967D0061661B /* GetEintraegeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetEintraegeProtocol.swift; sourceTree = "<group>"; };
+		46E2151D1B18998C0061661B /* UebersichtController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UebersichtController.swift; sourceTree = "<group>"; };
+		46E2298F1B160CF700115AF7 /* PlanHolderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanHolderController.swift; sourceTree = "<group>"; };
+		46E328961B6A6169000B9235 /* Alamofire */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Alamofire; path = ../../Alamofire; sourceTree = "<group>"; };
+		46E328981B6A6191000B9235 /* Alamofire-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Alamofire-master"; sourceTree = "<group>"; };
+		46E4D8A01B1CE76A00BC2859 /* InfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoController.swift; sourceTree = "<group>"; };
+		46E575A21B174D0E00E9556E /* SwiftOverlays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftOverlays.swift; sourceTree = "<group>"; };
+		46E5A04D1B63B22C003DD2D1 /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		46E5A04E1B63B22C003DD2D1 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		46E5A04F1B63B22C003DD2D1 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		46E5A0501B63B22C003DD2D1 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		46E5A0521B63B22C003DD2D1 /* Download.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
+		46E5A0531B63B22C003DD2D1 /* ResponseSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
+		46E5A0541B63B22C003DD2D1 /* Upload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Upload.swift; sourceTree = "<group>"; };
+		46E5A0551B63B22C003DD2D1 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		46E5A0571B63B22C003DD2D1 /* Alamofire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alamofire.h; sourceTree = "<group>"; };
+		46E5A0581B63B22C003DD2D1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46E5A0641B63B345003DD2D1 /* AlamofireStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireStruct.swift; sourceTree = "<group>"; };
+		46E87BAD1B5ED970005BA2E1 /* BPCompatibleAlertAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BPCompatibleAlertAction.swift; sourceTree = "<group>"; };
+		46E87BAE1B5ED970005BA2E1 /* BPCompatibleAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BPCompatibleAlertController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46E20C7E1B134E94001BD7BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46E20C961B134E94001BD7BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46539F7E1B17B040001DA343 /* RSDayFlow */ = {
+			isa = PBXGroup;
+			children = (
+				46539F801B17B062001DA343 /* NSCalendar+RSDFAdditions.h */,
+				46539F811B17B062001DA343 /* NSCalendar+RSDFAdditions.m */,
+				46539F821B17B062001DA343 /* RSDayFlow.h */,
+				46539F831B17B062001DA343 /* RSDFDatePickerCollectionView.h */,
+				46539F841B17B062001DA343 /* RSDFDatePickerCollectionView.m */,
+				46539F851B17B062001DA343 /* RSDFDatePickerCollectionViewLayout.h */,
+				46539F861B17B062001DA343 /* RSDFDatePickerCollectionViewLayout.m */,
+				46539F871B17B062001DA343 /* RSDFDatePickerDayCell.h */,
+				46539F881B17B062001DA343 /* RSDFDatePickerDayCell.m */,
+				46539F891B17B062001DA343 /* RSDFDatePickerDaysOfWeekView.h */,
+				46539F8A1B17B062001DA343 /* RSDFDatePickerDaysOfWeekView.m */,
+				46539F8B1B17B062001DA343 /* RSDFDatePickerMonthHeader.h */,
+				46539F8C1B17B062001DA343 /* RSDFDatePickerMonthHeader.m */,
+				46539F8D1B17B062001DA343 /* RSDFDatePickerView.h */,
+				46539F8E1B17B062001DA343 /* RSDFDatePickerView.m */,
+				46539F7F1B17B061001DA343 /* Martinshare-Bridging-Header.h */,
+			);
+			name = RSDayFlow;
+			sourceTree = "<group>";
+		};
+		46C5D1531B17911200881D85 /* Kalender */ = {
+			isa = PBXGroup;
+			children = (
+				46C5D1541B17913600881D85 /* HeaderCell.swift */,
+				46C5D1561B17920700881D85 /* MonthHeaderProtocol.swift */,
+				46E20CBE1B138567001BD7BF /* KalenderController.swift */,
+				468498021B17F4A000A77665 /* ShowDetailController.swift */,
+				46A451F21B192BA30029690A /* DayOverviewController.swift */,
+				46478F3D1B1A360B00AE0E6B /* EditEintragController.swift */,
+				464960D61B1B3F9F005AE5E2 /* NeuerEintragController.swift */,
+			);
+			name = Kalender;
+			sourceTree = "<group>";
+		};
+		46E20C781B134E94001BD7BF = {
+			isa = PBXGroup;
+			children = (
+				46E328981B6A6191000B9235 /* Alamofire-master */,
+				46E20C831B134E94001BD7BF /* Martinshare */,
+				46E20C9C1B134E94001BD7BF /* MartinshareTests */,
+				46E20C821B134E94001BD7BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46E20C821B134E94001BD7BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46E20C811B134E94001BD7BF /* Martinshare.app */,
+				46E20C991B134E94001BD7BF /* MartinshareTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46E20C831B134E94001BD7BF /* Martinshare */ = {
+			isa = PBXGroup;
+			children = (
+				46E215161B188BF60061661B /* ExtensionLibaries */,
+				46E20D0A1B13B540001BD7BF /* Protocols */,
+				46E20CB91B13783D001BD7BF /* Controllers */,
+				46E20CD61B1393C3001BD7BF /* MartinshareAPI.swift */,
+				46E215171B188F100061661B /* EintragDataContainer.swift */,
+				46DE3C371B1DE6D00021A2A8 /* lizenz.txt */,
+				46A451F01B1903FB0029690A /* EintragTree.swift */,
+				46A451EB1B18F0A90029690A /* Eintraege.swift */,
+				46E20C861B134E94001BD7BF /* AppDelegate.swift */,
+				46E20C8D1B134E94001BD7BF /* Main.storyboard */,
+				46E20C921B134E94001BD7BF /* LaunchScreen.xib */,
+				46E20C881B134E94001BD7BF /* Martinshare.xcdatamodeld */,
+				46E20C901B134E94001BD7BF /* Images.xcassets */,
+				46E20CD81B139561001BD7BF /* Prefs.swift */,
+				46E20C841B134E94001BD7BF /* Supporting Files */,
+			);
+			path = Martinshare;
+			sourceTree = "<group>";
+		};
+		46E20C841B134E94001BD7BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46E20C851B134E94001BD7BF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46E20C9C1B134E94001BD7BF /* MartinshareTests */ = {
+			isa = PBXGroup;
+			children = (
+				46E20C9F1B134E94001BD7BF /* MartinshareTests.swift */,
+				46E20C9D1B134E94001BD7BF /* Supporting Files */,
+			);
+			path = MartinshareTests;
+			sourceTree = "<group>";
+		};
+		46E20C9D1B134E94001BD7BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46E20C9E1B134E94001BD7BF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46E20CB91B13783D001BD7BF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				46C5D1531B17911200881D85 /* Kalender */,
+				46E20CBA1B13788E001BD7BF /* MainScreenController.swift */,
+				46E20CAD1B134F12001BD7BF /* LoginController.swift */,
+				46E20CBC1B137DA1001BD7BF /* EinstellungenController.swift */,
+				46D087661B1488A9003C3023 /* VertretungsplanController.swift */,
+				46D0876C1B14896A003C3023 /* StundenplanController.swift */,
+				46E2298F1B160CF700115AF7 /* PlanHolderController.swift */,
+				46E0EE5D1B1725F800AA7B7E /* MarkierungsEinstellungController.swift */,
+				46E2151D1B18998C0061661B /* UebersichtController.swift */,
+				46478F461B1A77BB00AE0E6B /* WaehleDatumController.swift */,
+				46E4D8A01B1CE76A00BC2859 /* InfoController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		46E20D0A1B13B540001BD7BF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				46E20D021B13AA91001BD7BF /* LoginProtocol.swift */,
+				46E20D0B1B13B55B001BD7BF /* IsLoggedInProtocol.swift */,
+				462AAE8B1B14BD0A003E5AA3 /* ConnectionProtocol.swift */,
+				4603B9841B164DCF00D3F3E1 /* WebViewLoadProtocol.swift */,
+				46E2151B1B18967D0061661B /* GetEintraegeProtocol.swift */,
+				46478F421B1A4D3700AE0E6B /* EintragenProtocol.swift */,
+				46478F441B1A772900AE0E6B /* GetDateProtocol.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		46E215161B188BF60061661B /* ExtensionLibaries */ = {
+			isa = PBXGroup;
+			children = (
+				46E5A05A1B63B22C003DD2D1 /* Source */,
+				46539F7E1B17B040001DA343 /* RSDayFlow */,
+				46E0EE681B17380F00AA7B7E /* UIColorExtension.swift */,
+				46E0EE641B1735E300AA7B7E /* colorPalette.plist */,
+				466BE5721B163B9B0010C04A /* CAPSPageMenu.swift */,
+				46E20D081B13AE5F001BD7BF /* SwiftyJSON.swift */,
+				46E87BAD1B5ED970005BA2E1 /* BPCompatibleAlertAction.swift */,
+				46E87BAE1B5ED970005BA2E1 /* BPCompatibleAlertController.swift */,
+				46A451F41B19462A0029690A /* DecodeHTML.swift */,
+				46539F961B17BF8E001DA343 /* NSDateExtension.swift */,
+				46E575A21B174D0E00E9556E /* SwiftOverlays.swift */,
+				46E5A0641B63B345003DD2D1 /* AlamofireStruct.swift */,
+			);
+			name = ExtensionLibaries;
+			sourceTree = "<group>";
+		};
+		46E5A0511B63B22C003DD2D1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				46E5A04E1B63B22C003DD2D1 /* Manager.swift */,
+				46E5A04F1B63B22C003DD2D1 /* ParameterEncoding.swift */,
+				46E5A0501B63B22C003DD2D1 /* Request.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		46E5A0561B63B22C003DD2D1 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				46E5A0521B63B22C003DD2D1 /* Download.swift */,
+				46E5A0531B63B22C003DD2D1 /* ResponseSerialization.swift */,
+				46E5A0541B63B22C003DD2D1 /* Upload.swift */,
+				46E5A0551B63B22C003DD2D1 /* Validation.swift */,
+			);
+			name = Features;
+			sourceTree = "<group>";
+		};
+		46E5A0591B63B22C003DD2D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46E5A0571B63B22C003DD2D1 /* Alamofire.h */,
+				46E5A0581B63B22C003DD2D1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46E5A05A1B63B22C003DD2D1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				46E5A04D1B63B22C003DD2D1 /* Alamofire.swift */,
+				46E328961B6A6169000B9235 /* Alamofire */,
+				46E5A0511B63B22C003DD2D1 /* Core */,
+				46E5A0561B63B22C003DD2D1 /* Features */,
+				46E5A0591B63B22C003DD2D1 /* Supporting Files */,
+			);
+			name = Source;
+			path = "../../../Alamofire-master/Source";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46E20C801B134E94001BD7BF /* Martinshare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46E20CA31B134E94001BD7BF /* Build configuration list for PBXNativeTarget "Martinshare" */;
+			buildPhases = (
+				46E20C7D1B134E94001BD7BF /* Sources */,
+				46E20C7E1B134E94001BD7BF /* Frameworks */,
+				46E20C7F1B134E94001BD7BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Martinshare;
+			productName = Martinshare;
+			productReference = 46E20C811B134E94001BD7BF /* Martinshare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46E20C981B134E94001BD7BF /* MartinshareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46E20CA61B134E94001BD7BF /* Build configuration list for PBXNativeTarget "MartinshareTests" */;
+			buildPhases = (
+				46E20C951B134E94001BD7BF /* Sources */,
+				46E20C961B134E94001BD7BF /* Frameworks */,
+				46E20C971B134E94001BD7BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46E20C9B1B134E94001BD7BF /* PBXTargetDependency */,
+			);
+			name = MartinshareTests;
+			productName = MartinshareTests;
+			productReference = 46E20C991B134E94001BD7BF /* MartinshareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46E20C791B134E94001BD7BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "ModestasV Studios";
+				TargetAttributes = {
+					46E20C801B134E94001BD7BF = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = N7342S7C7W;
+					};
+					46E20C981B134E94001BD7BF = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 46E20C801B134E94001BD7BF;
+					};
+				};
+			};
+			buildConfigurationList = 46E20C7C1B134E94001BD7BF /* Build configuration list for PBXProject "Martinshare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46E20C781B134E94001BD7BF;
+			productRefGroup = 46E20C821B134E94001BD7BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46E20C801B134E94001BD7BF /* Martinshare */,
+				46E20C981B134E94001BD7BF /* MartinshareTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46E20C7F1B134E94001BD7BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46E0EE651B1735E300AA7B7E /* colorPalette.plist in Resources */,
+				46E20C8F1B134E94001BD7BF /* Main.storyboard in Resources */,
+				46E20C941B134E94001BD7BF /* LaunchScreen.xib in Resources */,
+				46E328991B6A6191000B9235 /* Alamofire-master in Resources */,
+				46E328971B6A6169000B9235 /* Alamofire in Resources */,
+				46E20C911B134E94001BD7BF /* Images.xcassets in Resources */,
+				46DE3C381B1DE6D00021A2A8 /* lizenz.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46E20C971B134E94001BD7BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46E20C7D1B134E94001BD7BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46E5A0661B63B45E003DD2D1 /* Alamofire.h in Sources */,
+				46539F941B17B062001DA343 /* RSDFDatePickerMonthHeader.m in Sources */,
+				466BE5731B163B9B0010C04A /* CAPSPageMenu.swift in Sources */,
+				46D0876D1B14896A003C3023 /* StundenplanController.swift in Sources */,
+				46539F8F1B17B062001DA343 /* NSCalendar+RSDFAdditions.m in Sources */,
+				46E5A0621B63B22C003DD2D1 /* Validation.swift in Sources */,
+				46E87BB01B5ED970005BA2E1 /* BPCompatibleAlertController.swift in Sources */,
+				46E229901B160CF700115AF7 /* PlanHolderController.swift in Sources */,
+				46D087671B1488A9003C3023 /* VertretungsplanController.swift in Sources */,
+				46539F971B17BF8E001DA343 /* NSDateExtension.swift in Sources */,
+				46E5A0611B63B22C003DD2D1 /* Upload.swift in Sources */,
+				46539F911B17B062001DA343 /* RSDFDatePickerCollectionViewLayout.m in Sources */,
+				46539F951B17B062001DA343 /* RSDFDatePickerView.m in Sources */,
+				46E20CAE1B134F12001BD7BF /* LoginController.swift in Sources */,
+				46E5A0601B63B22C003DD2D1 /* ResponseSerialization.swift in Sources */,
+				462AAE8C1B14BD0A003E5AA3 /* ConnectionProtocol.swift in Sources */,
+				46539F931B17B062001DA343 /* RSDFDatePickerDaysOfWeekView.m in Sources */,
+				464960D71B1B3F9F005AE5E2 /* NeuerEintragController.swift in Sources */,
+				46E0EE691B17380F00AA7B7E /* UIColorExtension.swift in Sources */,
+				46E20CD91B139561001BD7BF /* Prefs.swift in Sources */,
+				46A451F31B192BA30029690A /* DayOverviewController.swift in Sources */,
+				46E20D091B13AE5F001BD7BF /* SwiftyJSON.swift in Sources */,
+				46E20CBB1B13788E001BD7BF /* MainScreenController.swift in Sources */,
+				46E5A05C1B63B22C003DD2D1 /* Manager.swift in Sources */,
+				46A451EC1B18F0A90029690A /* Eintraege.swift in Sources */,
+				46E2151C1B18967D0061661B /* GetEintraegeProtocol.swift in Sources */,
+				46E20CBD1B137DA1001BD7BF /* EinstellungenController.swift in Sources */,
+				46E20CBF1B138567001BD7BF /* KalenderController.swift in Sources */,
+				46E2151E1B18998C0061661B /* UebersichtController.swift in Sources */,
+				46E87BAF1B5ED970005BA2E1 /* BPCompatibleAlertAction.swift in Sources */,
+				46E20CD71B1393C3001BD7BF /* MartinshareAPI.swift in Sources */,
+				46C5D1571B17920700881D85 /* MonthHeaderProtocol.swift in Sources */,
+				46E5A05D1B63B22C003DD2D1 /* ParameterEncoding.swift in Sources */,
+				46C5D1551B17913600881D85 /* HeaderCell.swift in Sources */,
+				46539F921B17B062001DA343 /* RSDFDatePickerDayCell.m in Sources */,
+				46E20D031B13AA91001BD7BF /* LoginProtocol.swift in Sources */,
+				46478F471B1A77BB00AE0E6B /* WaehleDatumController.swift in Sources */,
+				46E575A31B174D0E00E9556E /* SwiftOverlays.swift in Sources */,
+				46A451F51B19462A0029690A /* DecodeHTML.swift in Sources */,
+				46E4D8A11B1CE76A00BC2859 /* InfoController.swift in Sources */,
+				46E20C8A1B134E94001BD7BF /* Martinshare.xcdatamodeld in Sources */,
+				46E5A05E1B63B22C003DD2D1 /* Request.swift in Sources */,
+				46E5A0651B63B345003DD2D1 /* AlamofireStruct.swift in Sources */,
+				46478F3E1B1A360B00AE0E6B /* EditEintragController.swift in Sources */,
+				468498031B17F4A000A77665 /* ShowDetailController.swift in Sources */,
+				46E5A05B1B63B22C003DD2D1 /* Alamofire.swift in Sources */,
+				46478F451B1A772900AE0E6B /* GetDateProtocol.swift in Sources */,
+				46E5A05F1B63B22C003DD2D1 /* Download.swift in Sources */,
+				46539F901B17B062001DA343 /* RSDFDatePickerCollectionView.m in Sources */,
+				46478F431B1A4D3700AE0E6B /* EintragenProtocol.swift in Sources */,
+				4603B9851B164DCF00D3F3E1 /* WebViewLoadProtocol.swift in Sources */,
+				46E215181B188F100061661B /* EintragDataContainer.swift in Sources */,
+				46E20D0C1B13B55B001BD7BF /* IsLoggedInProtocol.swift in Sources */,
+				46E0EE5E1B1725F800AA7B7E /* MarkierungsEinstellungController.swift in Sources */,
+				46A451F11B1903FB0029690A /* EintragTree.swift in Sources */,
+				46E20C871B134E94001BD7BF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46E20C951B134E94001BD7BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46E20CA01B134E94001BD7BF /* MartinshareTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46E20C9B1B134E94001BD7BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46E20C801B134E94001BD7BF /* Martinshare */;
+			targetProxy = 46E20C9A1B134E94001BD7BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46E20C8D1B134E94001BD7BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46E20C8E1B134E94001BD7BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46E20C921B134E94001BD7BF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46E20C931B134E94001BD7BF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46E20CA11B134E94001BD7BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46E20CA21B134E94001BD7BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46E20CA41B134E94001BD7BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Martinshare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Martinshare/Martinshare-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46E20CA51B134E94001BD7BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Martinshare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Martinshare/Martinshare-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		46E20CA71B134E94001BD7BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MartinshareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Martinshare.app/Martinshare";
+			};
+			name = Debug;
+		};
+		46E20CA81B134E94001BD7BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MartinshareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Martinshare.app/Martinshare";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46E20C7C1B134E94001BD7BF /* Build configuration list for PBXProject "Martinshare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46E20CA11B134E94001BD7BF /* Debug */,
+				46E20CA21B134E94001BD7BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46E20CA31B134E94001BD7BF /* Build configuration list for PBXNativeTarget "Martinshare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46E20CA41B134E94001BD7BF /* Debug */,
+				46E20CA51B134E94001BD7BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46E20CA61B134E94001BD7BF /* Build configuration list for PBXNativeTarget "MartinshareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46E20CA71B134E94001BD7BF /* Debug */,
+				46E20CA81B134E94001BD7BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		46E20C881B134E94001BD7BF /* Martinshare.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				46E20C891B134E94001BD7BF /* Martinshare.xcdatamodel */,
+			);
+			currentVersion = 46E20C891B134E94001BD7BF /* Martinshare.xcdatamodel */;
+			path = Martinshare.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 46E20C791B134E94001BD7BF /* Project object */;
+}

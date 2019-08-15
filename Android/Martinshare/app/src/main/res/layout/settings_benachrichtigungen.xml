@@ -1,0 +1,25 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/app_bar_top_padding"
+        android:id="@+id/toolbarsettingsbenachrichtigungen"
+        app:theme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="@color/White"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content_framebenachrichtigungen"
+        android:layout_below="@id/toolbarsettingsbenachrichtigungen">
+
+        </FrameLayout>
+
+</RelativeLayout>

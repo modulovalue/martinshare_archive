@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "--- HOOOOOOOOOOOOOOOOOOOOOOK POST-UPDATE"
+cd /customers/3/2/2/martinshare.com/httpd.www/hotspot
+unset GIT_DIR
+git pull
+echo "pulled newest version"
+

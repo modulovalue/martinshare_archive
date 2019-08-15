@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "mobile.martinshare.com.martinshare.activities.CalendarActivity"/>
+      <point      
+        x = "7344"      
+        y = "-8"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "mobile.martinshare.com.martinshare.activities.CalendarActivity"/>
+      <point      
+        x = "2440"      
+        y = "2760"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "mobile.martinshare.com.martinshare.activities.update.UpdateEintraege"/>
+      <point      
+        x = "10808"      
+        y = "1305"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "mobile.martinshare.com.martinshare.activities.update.UpdateEintraege"/>
+      <point      
+        x = "2440"      
+        y = "5420"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "mobile.martinshare.com.martinshare.activities.MainView.MainActivity"/>
+      <point      
+        x = "5885"      
+        y = "3027"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "mobile.martinshare.com.martinshare.activities.MainView.MainActivity"/>
+      <point      
+        x = "2440"      
+        y = "10740"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "mobile.martinshare.com.martinshare.activities.CheckActivity"/>
+      <point      
+        x = "3050"      
+        y = "3063"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "mobile.martinshare.com.martinshare.activities.eintragen.Eintragen"/>
+      <point      
+        x = "9490"      
+        y = "1318"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "mobile.martinshare.com.martinshare.activities.eintragen.Eintragen"/>
+      <point      
+        x = "2432"      
+        y = "8528"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "mobile.martinshare.com.martinshare.activities.login.LoginScreen"/>
+      <point      
+        x = "4506"      
+        y = "3063"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "mobile.martinshare.com.martinshare.activities.vertretungsplan.Vertretungsplan"/>
+      <point      
+        x = "1752"      
+        y = "156"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "mobile.martinshare.com.martinshare.activities.info.InfoActivity"/>
+      <point      
+        x = "4668"      
+        y = "264"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "mobile.martinshare.com.martinshare.activities.stundenplan.StundenplanActivity"/>
+      <point      
+        x = "6036"      
+        y = "122"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "mobile.martinshare.com.martinshare.activities.stundenplan.StundenplanActivity"/>
+      <point      
+        x = "2440"      
+        y = "100"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>

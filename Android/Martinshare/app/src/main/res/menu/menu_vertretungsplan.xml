@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="mobile.martinshare.com.martinshare.activities.vertretungsplan.Vertretungsplan">
+
+    <item
+        android:id="@+id/refresh"
+        android:title="@string/refresh"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_action_refresh"
+        />
+
+    <item
+        android:id="@+id/settext"
+        android:title="Markierungstext"
+        android:orderInCategory="1"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_action_edit"
+        />
+
+    <item
+        android:id="@+id/setsize"
+        android:title="Markierungsgröße"
+        android:orderInCategory="1"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_action_sort_by_size"
+        />
+</menu>

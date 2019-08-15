@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:weightSum="1">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:orientation="horizontal"
+        android:background="#66555555"
+        android:paddingLeft="12dp"
+        android:paddingRight="2dp"
+        >
+
+        <ImageView
+            android:id="@+id/typeicon"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:padding="1dp"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/ic_hicon" />
+
+        <ImageView
+            android:id="@+id/typeicon2"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:padding="1dp"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/ic_hicon" />
+        <ImageView
+            android:id="@+id/typeicon3"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:padding="1dp"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/ic_hicon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Nav Eintrag"
+            android:paddingLeft="2dp"
+            android:id="@+id/typeicontext"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/White"
+            android:gravity="start|center_vertical"
+            android:ellipsize="end"/>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp">
+
+            <TextView
+                android:layout_width="293dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Deutsch"
+                android:id="@+id/row_title"
+                android:textColor="@color/White"
+                android:gravity="start|center_horizontal"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Seite 59 Nummer 4"
+                android:id="@+id/row_message"
+                android:ellipsize="end"
+                android:maxLines = "12"
+                android:textColor="@color/grey_300"
+                android:textSize="14sp"
+                android:gravity="start|center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 Dezember 1009"
+                android:id="@+id/row_submessage"
+                android:ellipsize="end"
+                android:maxLines = "8"
+                android:textColor="#777"
+                android:textSize="12sp"
+                android:gravity="start|center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Benachrichtigung 1">
+
+        <CheckBoxPreference
+            android:key="preference_check_benachrichtigung1"
+            android:title="Benachrichtigung aktivieren?"
+            android:defaultValue="true"
+            android:summary="Diese Benachrichtigung erfolgt 1 Tag vorher (Arbeiten, Hausaufgaben und Sonstiges)" />
+
+        <mobile.martinshare.com.martinshare.activities.MainView.EinstellungenTab.TimePreference
+            android:key="timePref1"
+            android:defaultValue="1476108000000L"
+            android:title="Uhrzeit"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Benachrichtigung 2">
+
+        <CheckBoxPreference
+            android:key="preference_check_benachrichtigung2"
+            android:title="Benachrichtigung aktivieren?"
+            android:defaultValue="true"
+            android:summary="Diese Benachrichtigung erfolgt 3 Tage vorher (nur Arbeiten)" />
+
+        <mobile.martinshare.com.martinshare.activities.MainView.EinstellungenTab.TimePreference
+            android:key="timePref2"
+            android:defaultValue="1476108000000L"
+            android:title="Uhrzeit"/>
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

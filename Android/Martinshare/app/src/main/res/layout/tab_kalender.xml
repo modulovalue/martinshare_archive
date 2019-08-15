@@ -1,0 +1,518 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="2">
+
+    <com.melnykov.fab.ObservableScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/White"
+        android:fillViewport="false"
+        android:id="@+id/eintrag_view"
+        android:fadeScrollbars="false">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:focusableInTouchMode="true"
+                android:baselineAligned="false"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/weekdaynames"
+                    android:background="#ededed">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Mo"
+                        android:id="@+id/wd1"
+                        android:layout_weight=".1428"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Di"
+                        android:id="@+id/wd2"
+                        android:layout_weight=".1428"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Mi"
+                        android:id="@+id/wd3"
+                        android:layout_weight=".1428"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Do"
+                        android:id="@+id/wd4"
+                        android:layout_weight=".1428"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Fr"
+                        android:id="@+id/wd5"
+                        android:layout_weight=".1428"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Sa"
+                        android:id="@+id/wd6"
+                        android:layout_weight=".1428"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="So"
+                        android:id="@+id/wd7"
+                        android:layout_weight=".1428"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/calrow1"
+                    android:measureWithLargestChild="false"
+                    android:layout_weight="0.1">
+
+                    <fragment
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag1"
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag2"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag3"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag4"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag5"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag6"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag7"
+                        android:layout_weight=".1428" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/calrow2"
+                    android:measureWithLargestChild="false"
+                    android:minHeight="5dp"
+                    android:layout_weight="0.1">
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag8"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag9"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag10"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag11"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag12"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag13"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag14"
+                        android:layout_weight=".1428" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/calrow3"
+                    android:layout_weight="0.1">
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag15"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag16"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag17"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag18"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag19"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag20"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag21"
+                        android:layout_weight=".1428" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/calrow4"
+                    android:layout_weight="0.1">
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag22"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag23"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag24"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag25"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag26"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag27"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag28"
+                        android:layout_weight=".1428" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/calrow5"
+                    android:layout_weight="0.1">
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag29"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag30"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag31"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag32"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag33"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag34"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag35"
+                        android:layout_weight=".1428" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/calrow6"
+                    android:layout_weight="0.1">
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag36"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag37"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag38"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag39"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag40"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag41"
+                        android:layout_weight=".1428" />
+
+                    <fragment
+                        tools:layout="@layout/calendar_day_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:name="mobile.martinshare.com.martinshare.activities.MainView.KalenderTab.CalendarDayFragment"
+                        android:id="@+id/caldayfrag42"
+                        android:layout_weight=".1428" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="0dp"
+                android:layout_width="fill_parent"
+                android:layout_weight="5">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:id="@+id/eintrag_layout_container"
+                    android:padding="6dp">
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.melnykov.fab.ObservableScrollView>
+
+</RelativeLayout>

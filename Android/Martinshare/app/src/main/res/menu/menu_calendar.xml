@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.CalendarFragment">
+    <item
+        android:id="@+id/todayToolbarButton"
+        android:title="Heute"
+        android:orderInCategory="1"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/prevMonthToolbarButton"
+        android:title="@string/prev_month_string"
+        android:orderInCategory="2"
+        android:icon="@drawable/previous"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/nextMonthToolbarButton"
+        android:title="@string/next_month_string"
+        android:orderInCategory="2"
+        android:icon="@drawable/next"
+        app:showAsAction="always" />
+
+</menu>

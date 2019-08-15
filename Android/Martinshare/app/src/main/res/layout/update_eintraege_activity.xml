@@ -1,0 +1,75 @@
+<ScrollView
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    tools:context="mobile.martinshare.com.martinshare.activities.eintragen.Eintragen"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar"/>
+
+        <ImageView
+            android:id="@+id/eintragImageUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_hicon"
+            android:padding="4dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12.05.2004"
+                android:id="@+id/dateText"
+                android:onClick="datumAendern" />
+
+        </LinearLayout>
+        <EditText
+            android:layout_margin="8dp"
+            android:id="@+id/nameEintrag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="Fach"
+            android:inputType="text"
+            android:gravity="center_horizontal"/>
+
+        <EditText
+            android:layout_margin="8dp"
+            android:id="@+id/beschreibungText"
+            android:hint="Beschreibung"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:lines="8"
+            android:minLines="6"
+            android:gravity="top|start"
+            android:maxLines="10"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:scrollbars="vertical"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Absenden"
+            android:id="@+id/sendEintrag"
+            android:layout_gravity="center_horizontal"
+            android:onClick="eintragUpdatenButton"/>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,45 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:paddingBottom="0dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/aktivitaettitle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="AKTIVITÄT"
+            android:singleLine="false"
+            android:textSize="16sp"
+            android:textColor="#ccc"
+            android:textStyle="bold"
+            android:gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/aktivitaetrefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/app_bar_top_padding"
+            android:divider="#666"
+            android:dividerHeight="0dp"
+            android:descendantFocusability="blocksDescendants"
+            />
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout >

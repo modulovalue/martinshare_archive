@@ -1,0 +1,4223 @@
+<?xml version="1.0" standalone="yes"?>
+<Vokabeldatei>
+  <xs:schema id="Vokabeldatei" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="Vokabeldatei" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="VProperty">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Key" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Style">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Nr" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" type="xs:int" />
+                <xs:element name="StyleName" type="xs:string" minOccurs="0" />
+                <xs:element name="Shortcut" type="xs:string" minOccurs="0" />
+                <xs:element name="FontName" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:float" minOccurs="0" />
+                <xs:element name="Color" type="xs:int" minOccurs="0" />
+                <xs:element name="Bold" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Italic" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Underline" type="xs:boolean" minOccurs="0" />
+                <xs:element name="StrikeThrough" type="xs:boolean" minOccurs="0" />
+                <xs:element name="SuperScript" type="xs:boolean" minOccurs="0" />
+                <xs:element name="SubScript" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Hidden" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Backwards" type="xs:boolean" minOccurs="0" />
+                <xs:element name="FixStyle" type="xs:string" minOccurs="0" />
+                <xs:element name="AutoRigDel" type="xs:boolean" minOccurs="0" />
+                <xs:element name="AutoPuzDel" type="xs:boolean" minOccurs="0" />
+                <xs:element name="AutoAudDel" type="xs:boolean" minOccurs="0" />
+                <xs:element name="AutoPhoDel" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ColorType" type="xs:int" minOccurs="0" />
+                <xs:element name="RightToLeft" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Voc">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Nr" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" type="xs:int" />
+                <xs:element name="Hash" type="xs:int" minOccurs="0" />
+                <xs:element name="Englisch" type="xs:string" minOccurs="0" />
+                <xs:element name="Deutsch" type="xs:string" minOccurs="0" />
+                <xs:element name="DateCreated" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="DateChanged" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="L1" type="xs:string" minOccurs="0" />
+                <xs:element name="L2" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//Style" />
+        <xs:field xpath="Nr" />
+      </xs:unique>
+      <xs:unique name="Voc_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//Voc" />
+        <xs:field xpath="Nr" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <VProperty>
+    <Key>StyCount</Key>
+    <Value>22</Value>
+  </VProperty>
+  <VProperty>
+    <Key>StyAdd1</Key>
+    <Value>11</Value>
+  </VProperty>
+  <VProperty>
+    <Key>ParaFact</Key>
+    <Value>2/2/1.1/1.1/2/1/1/1.3/</Value>
+  </VProperty>
+  <VProperty>
+    <Key>PicStyles</Key>
+    <Value>30000&#x1;40055&#x1;13&#x1;0&#x1;0&#x1;0&#x1;0&#x1;8&#x1;30000&#x4;240055&#x4;213&#x4;29&#x4;2111110011&#x4;20&#x4;27&#x4;232&#x4;224&#x4;2320&#x4;2240&#x4;21&#x4;21&#x4;21&#x4;21&#x4;21&#x4;20&#x4;20&#x4;22&#x4;216777215&#x4;20&#x4;20&#x4;20&#x4;20&#x4;20&#x4;20&#x4;20&#x4;2&#x1;30000&#x4;240055&#x4;213&#x4;29&#x4;2111110011&#x4;20&#x4;27&#x4;232&#x4;224&#x4;2320&#x4;2240&#x4;21&#x4;21&#x4;21&#x4;21&#x4;21&#x4;20&#x4;20&#x4;22&#x4;216777215&#x4;20&#x4;20&#x4;20&#x4;20&#x4;20&#x4;20&#x4;20&#x4;2&#x1;30000&#x4;240055&#x4;213&#x4;29&#x4;2111110011&#x4;20&#x4;27&#x4;232&#x4;224&#x4;2320&#x4;2240&#x4;21&#x4;21&#x4;21&#x4;21&#x4;21&#x4;20&#x4;20&#x4;22&#x4;216777215&#x4;20&#x4;20&#x4;20&#x4;20&#x4;20&#x4;20&#x4;20&#x4;2&#x1;30000&#x4;240055&#x4;213&#x4;29&#x4;2111110011&#x4;20&#x4;27&#x4;232&#x4;224&#x4;2320&#x4;2240&#x4;21&#x4;21&#x4;21&#x4;21&#x4;21&#x4;20&#x4;20&#x4;22&#x4;216777215&#x4;20&#x4;20&#x4;20&#x4;20&#x4;20&#x4;20&#x4;20&#x4;2&#x1;30000&#x4;240055&#x4;213&#x4;29&#x4;2111110011&#x4;20&#x4;27&#x4;232&#x4;224&#x4;2320&#x4;2240&#x4;21&#x4;21&#x4;21&#x4;21&#x4;21&#x4;20&#x4;20&#x4;22&#x4;216777215&#x4;20&#x4;20&#x4;20&#x4;20&#x4;20&#x4;20&#x4;20&#x4;2&#x1;30000&#x4;240055&#x4;213&#x4;29&#x4;2111100010&#x4;20&#x4;27&#x4;232&#x4;224&#x4;2160&#x4;2120&#x4;21&#x4;21&#x4;21&#x4;21&#x4;21&#x4;20&#x4;20&#x4;22&#x4;216777215&#x4;20&#x4;20&#x4;20&#x4;20&#x4;20&#x4;20&#x4;20&#x4;2&#x1;30000&#x4;240055&#x4;213&#x4;29&#x4;2111100010&#x4;20&#x4;27&#x4;232&#x4;224&#x4;2160&#x4;2120&#x4;21&#x4;21&#x4;21&#x4;21&#x4;21&#x4;20&#x4;20&#x4;22&#x4;216777215&#x4;20&#x4;20&#x4;20&#x4;20&#x4;20&#x4;20&#x4;20&#x4;2&#x1;30000&#x4;240055&#x4;213&#x4;29&#x4;2111110011&#x4;20&#x4;27&#x4;232&#x4;224&#x4;2320&#x4;2240&#x4;21&#x4;21&#x4;21&#x4;21&#x4;21&#x4;20&#x4;20&#x4;22&#x4;216777215&#x4;20&#x4;20&#x4;20&#x4;20&#x4;20&#x4;20&#x4;20&#x4;2&#x1;0&#x1;0&#x1;0&#x1;0&#x1;0&#x1;0&#x1;0&#x1;0&#x1;</Value>
+  </VProperty>
+  <VProperty>
+    <Key>StyComposeFormatWrdInf</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>StyComposeFormatPhrInf</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>StyComposeFormatWrdIpa</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>StyComposeFormatPhrIpa</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>ReqVersion</Key>
+    <Value>40000</Value>
+  </VProperty>
+  <VProperty>
+    <Key>FileVersion</Key>
+    <Value>40055</Value>
+  </VProperty>
+  <VProperty>
+    <Key>VocCount</Key>
+    <Value>102</Value>
+  </VProperty>
+  <VProperty>
+    <Key>Lang_1</Key>
+    <Value>Englisch</Value>
+  </VProperty>
+  <VProperty>
+    <Key>Lang_2</Key>
+    <Value>Deutsch</Value>
+  </VProperty>
+  <VProperty>
+    <Key>LangISO_1</Key>
+    <Value>eng</Value>
+  </VProperty>
+  <VProperty>
+    <Key>LangISO_2</Key>
+    <Value>deu</Value>
+  </VProperty>
+  <VProperty>
+    <Key>MainSty</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>MainSty_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>MainSty_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>DefStyWrd_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>DefStyWrd_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>DefStyPhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>DefStyPhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>DefStyAddInf_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>DefStyAddInf_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>MainCS</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>MainCS_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>MainCS_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>SpecialChar_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>SpecialChar_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>IMESupport_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>IMESupport_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AlignMirror_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AlignMirror_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AddInfSymbol_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AddInfSymbol_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>VocCaptForm_1</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>VocCaptComment_1</Key>
+    <Value>2</Value>
+  </VProperty>
+  <VProperty>
+    <Key>VocCaptAddInf_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>VocCaptPhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>VocCaptForm_2</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>VocCaptComment_2</Key>
+    <Value>2</Value>
+  </VProperty>
+  <VProperty>
+    <Key>VocCaptAddInf_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>VocCaptPhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>UseMediaCollsAud_1</Key>
+    <Value>eng</Value>
+  </VProperty>
+  <VProperty>
+    <Key>UseMediaCollsPic_1</Key>
+    <Value>eng</Value>
+  </VProperty>
+  <VProperty>
+    <Key>UseMediaCollsVid_1</Key>
+    <Value>eng</Value>
+  </VProperty>
+  <VProperty>
+    <Key>UseMediaCollsTxt_1</Key>
+    <Value>eng</Value>
+  </VProperty>
+  <VProperty>
+    <Key>UseMediaCollsPho_1</Key>
+    <Value>eng</Value>
+  </VProperty>
+  <VProperty>
+    <Key>UseMediaCollsAud_2</Key>
+    <Value>deu</Value>
+  </VProperty>
+  <VProperty>
+    <Key>UseMediaCollsPic_2</Key>
+    <Value>deu</Value>
+  </VProperty>
+  <VProperty>
+    <Key>UseMediaCollsVid_2</Key>
+    <Value>deu</Value>
+  </VProperty>
+  <VProperty>
+    <Key>UseMediaCollsTxt_2</Key>
+    <Value>deu</Value>
+  </VProperty>
+  <VProperty>
+    <Key>UseMediaCollsPho_2</Key>
+    <Value>deu</Value>
+  </VProperty>
+  <VProperty>
+    <Key>HAPILang_1</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>HAPILang_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>DateTimeChanged</Key>
+    <Value>41973.5894687616</Value>
+  </VProperty>
+  <VProperty>
+    <Key>DateTimeChangedIndex</Key>
+    <Value>41973.5894687616</Value>
+  </VProperty>
+  <VProperty>
+    <Key>DateTimeCreated</Key>
+    <Value>41973.5675384144</Value>
+  </VProperty>
+  <VProperty>
+    <Key>Author</Key>
+    <Value>F</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AuthorType</Key>
+    <Value>4</Value>
+  </VProperty>
+  <VProperty>
+    <Key>Copyright</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>EnterAuthor</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>Content</Key>
+    <Value>Persönlicher Wortschatz</Value>
+  </VProperty>
+  <VProperty>
+    <Key>Comment</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>Abbreviations</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>ShowEditMessage</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>EditMessage</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>FileType</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>MedPathAud_1</Key>
+    <Value>0&#x0;</Value>
+  </VProperty>
+  <VProperty>
+    <Key>MedPathPic_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>MedPathVid_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>MedPathTxt_1</Key>
+    <Value>0&#x0;</Value>
+  </VProperty>
+  <VProperty>
+    <Key>MedPathPho_1</Key>
+    <Value>0&#x0;</Value>
+  </VProperty>
+  <VProperty>
+    <Key>MedPathAud_2</Key>
+    <Value>0&#x0;</Value>
+  </VProperty>
+  <VProperty>
+    <Key>MedPathPic_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>MedPathVid_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>MedPathTxt_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>MedPathPho_2</Key>
+    <Value>0&#x0;</Value>
+  </VProperty>
+  <VProperty>
+    <Key>Folder</Key>
+    <Value>Englisch</Value>
+  </VProperty>
+  <VProperty>
+    <Key>FolderISO</Key>
+    <Value>eng</Value>
+  </VProperty>
+  <VProperty>
+    <Key>TargetGroup</Key>
+    <Value>Deutsch</Value>
+  </VProperty>
+  <VProperty>
+    <Key>TargetGroupISO</Key>
+    <Value>deu</Value>
+  </VProperty>
+  <VProperty>
+    <Key>TrainFile</Key>
+    <Value>Eng-vok-20141130-133715-5e4576b8</Value>
+  </VProperty>
+  <VProperty>
+    <Key>TrainTypes</Key>
+    <Value>11111111110000000000</Value>
+  </VProperty>
+  <VProperty>
+    <Key>TrainCont</Key>
+    <Value>33333030</Value>
+  </VProperty>
+  <VProperty>
+    <Key>CurTrain</Key>
+    <Value>-1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>Direction</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>UnitOptCommon</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>UnitOptSpecific_1_0</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>UnitOptSpecific_1_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>UnitOptSpecific_2_0</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>UnitOptSpecific_2_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>UnitOptSpecific_3_0</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>UnitOptSpecific_3_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>UnitOptSpecific_4_0</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>UnitOptSpecific_4_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>UnitOptSpecific_5_0</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>UnitOptSpecific_5_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>UnitOptSpecific_6_0</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>UnitOptSpecific_6_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>UnitOptSpecific_7_0</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>UnitOptSpecific_7_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>UnitOptSpecific_8_0</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>UnitOptSpecific_8_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>UnitOptSpecific_9_0</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>UnitOptSpecific_9_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>UnitOptSpecific_10_0</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>UnitOptSpecific_10_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>TableOrientationVertical</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>ColsKnown</Key>
+    <Value>{Voc.[Nr]}{Voc.[Hash]}{Voc.[1]}{Voc.[2]}{Voc.[DateCreated]}{Voc.[DateChanged]}{Voc.[L1]}{Voc.[L2]}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>SetSort</Key>
+    <Value>{Voc.[Nr]}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>SetSortTut</Key>
+    <Value>{Voc.[Nr]}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>SetChapDir</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>SetFilter</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>SetChange</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>SetEditVoc</Key>
+    <Value>{Voc.[Nr]}{Voc.[1]}{Voc.[2]}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>SetEditAdd</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>SetEditCat</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AllowSort</Key>
+    <Value>{Voc.[Nr]}{Voc.[1]}{Voc.[2]}{Voc.[DateCreated]}{Voc.[DateChanged]}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AllowSortTut</Key>
+    <Value>{Voc.[Nr]}{Voc.[1]}{Voc.[2]}{Voc.[DateCreated]}{Voc.[DateChanged]}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AllowChapDir</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AllowFilter</Key>
+    <Value>{Voc.[Nr]}{Voc.[1]}{Voc.[2]}{Voc.[DateCreated]}{Voc.[DateChanged]}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AllowChange</Key>
+    <Value>{Voc.[Nr]}{Voc.[1]}{Voc.[2]}{Voc.[DateCreated]}{Voc.[DateChanged]}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AllowEditVoc</Key>
+    <Value>{Voc.[Nr]}{Voc.[1]}{Voc.[2]}{Voc.[DateCreated]}{Voc.[DateChanged]}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AllowEditAdd</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AllowEditCat</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>FilterSort</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>WikiBaseURL</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>WikiPageName</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>WikiPageURL</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>WikiRevisionID</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>WikiTimeStamp</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>WikiLastRefresh</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>FieldType_Nr</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>FieldType_Englisch</Key>
+    <Value>5</Value>
+  </VProperty>
+  <VProperty>
+    <Key>FieldType_Deutsch</Key>
+    <Value>5</Value>
+  </VProperty>
+  <VProperty>
+    <Key>FieldType_DateCreated</Key>
+    <Value>6</Value>
+  </VProperty>
+  <VProperty>
+    <Key>FieldType_DateChanged</Key>
+    <Value>7</Value>
+  </VProperty>
+  <VProperty>
+    <Key>FieldType_L1</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>FieldType_L2</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelPrefixWrd_1</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelPrefixTextWrd_1</Key>
+    <Value>to</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelSuffixWrd_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelSuffixTextWrd_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelBracksWrd_1</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelBracksTextWrd_1</Key>
+    <Value>()[]{}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelStylesWrd_1</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigReplaceWrd_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigReplaceTextWrd_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelPrefixWrd_1</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelPrefixTextWrd_1</Key>
+    <Value>to</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelSuffixWrd_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelSuffixTextWrd_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelBracksWrd_1</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelBracksTextWrd_1</Key>
+    <Value>()[]{}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelStylesWrd_1</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzReplaceWrd_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzReplaceTextWrd_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelPrefixWrd_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelPrefixTextWrd_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelSuffixWrd_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelSuffixTextWrd_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelBracksWrd_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelBracksTextWrd_1</Key>
+    <Value>()[]{}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelStylesWrd_1</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudReplaceWrd_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudReplaceTextWrd_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelPrefixWrd_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelPrefixTextWrd_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelSuffixWrd_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelSuffixTextWrd_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelBracksWrd_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelBracksTextWrd_1</Key>
+    <Value>()[]{}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelStylesWrd_1</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoReplaceWrd_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoReplaceTextWrd_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelPrefixWrd_1</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelPrefixTextWrd_1</Key>
+    <Value>to</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelSuffixWrd_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelSuffixTextWrd_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelBracksWrd_1</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelBracksTextWrd_1</Key>
+    <Value>()[]{}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelStylesWrd_1</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicReplaceWrd_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicReplaceTextWrd_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelPrefixWrd_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelPrefixTextWrd_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelSuffixWrd_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelSuffixTextWrd_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelBracksWrd_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelBracksTextWrd_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelStylesWrd_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidReplaceWrd_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidReplaceTextWrd_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelPrefixWrd_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelPrefixTextWrd_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelSuffixWrd_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelSuffixTextWrd_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelBracksWrd_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelBracksTextWrd_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelStylesWrd_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtReplaceWrd_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtReplaceTextWrd_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelPrefixPhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelPrefixTextPhr_1</Key>
+    <Value>to</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelSuffixPhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelSuffixTextPhr_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelBracksPhr_1</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelBracksTextPhr_1</Key>
+    <Value>()[]{}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelStylesPhr_1</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigReplacePhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigReplaceTextPhr_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelPrefixPhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelPrefixTextPhr_1</Key>
+    <Value>to</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelSuffixPhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelSuffixTextPhr_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelBracksPhr_1</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelBracksTextPhr_1</Key>
+    <Value>()[]{}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelStylesPhr_1</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzReplacePhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzReplaceTextPhr_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelPrefixPhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelPrefixTextPhr_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelSuffixPhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelSuffixTextPhr_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelBracksPhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelBracksTextPhr_1</Key>
+    <Value>()[]{}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelStylesPhr_1</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudReplacePhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudReplaceTextPhr_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelPrefixPhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelPrefixTextPhr_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelSuffixPhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelSuffixTextPhr_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelBracksPhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelBracksTextPhr_1</Key>
+    <Value>()[]{}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelStylesPhr_1</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoReplacePhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoReplaceTextPhr_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelPrefixPhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelPrefixTextPhr_1</Key>
+    <Value>to</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelSuffixPhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelSuffixTextPhr_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelBracksPhr_1</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelBracksTextPhr_1</Key>
+    <Value>()[]{}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelStylesPhr_1</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicReplacePhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicReplaceTextPhr_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelPrefixPhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelPrefixTextPhr_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelSuffixPhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelSuffixTextPhr_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelBracksPhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelBracksTextPhr_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelStylesPhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidReplacePhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidReplaceTextPhr_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelPrefixPhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelPrefixTextPhr_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelSuffixPhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelSuffixTextPhr_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelBracksPhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelBracksTextPhr_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelStylesPhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtReplacePhr_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtReplaceTextPhr_1</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigUseInf_1</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelPrefixWrd_2</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelPrefixTextWrd_2</Key>
+    <Value>der, die, der/die, das</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelSuffixWrd_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelSuffixTextWrd_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelBracksWrd_2</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelBracksTextWrd_2</Key>
+    <Value>()[]{}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelStylesWrd_2</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigReplaceWrd_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigReplaceTextWrd_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelPrefixWrd_2</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelPrefixTextWrd_2</Key>
+    <Value>der, die, der/die, das</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelSuffixWrd_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelSuffixTextWrd_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelBracksWrd_2</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelBracksTextWrd_2</Key>
+    <Value>()[]{}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelStylesWrd_2</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzReplaceWrd_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzReplaceTextWrd_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelPrefixWrd_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelPrefixTextWrd_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelSuffixWrd_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelSuffixTextWrd_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelBracksWrd_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelBracksTextWrd_2</Key>
+    <Value>()[]{}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelStylesWrd_2</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudReplaceWrd_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudReplaceTextWrd_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelPrefixWrd_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelPrefixTextWrd_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelSuffixWrd_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelSuffixTextWrd_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelBracksWrd_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelBracksTextWrd_2</Key>
+    <Value>()[]{}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelStylesWrd_2</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoReplaceWrd_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoReplaceTextWrd_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelPrefixWrd_2</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelPrefixTextWrd_2</Key>
+    <Value>der, die, der/die, das</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelSuffixWrd_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelSuffixTextWrd_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelBracksWrd_2</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelBracksTextWrd_2</Key>
+    <Value>()[]{}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelStylesWrd_2</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicReplaceWrd_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicReplaceTextWrd_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelPrefixWrd_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelPrefixTextWrd_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelSuffixWrd_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelSuffixTextWrd_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelBracksWrd_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelBracksTextWrd_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelStylesWrd_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidReplaceWrd_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidReplaceTextWrd_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelPrefixWrd_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelPrefixTextWrd_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelSuffixWrd_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelSuffixTextWrd_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelBracksWrd_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelBracksTextWrd_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelStylesWrd_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtReplaceWrd_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtReplaceTextWrd_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelPrefixPhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelPrefixTextPhr_2</Key>
+    <Value>der, die, der/die, das</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelSuffixPhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelSuffixTextPhr_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelBracksPhr_2</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelBracksTextPhr_2</Key>
+    <Value>()[]{}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigDelStylesPhr_2</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigReplacePhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigReplaceTextPhr_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelPrefixPhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelPrefixTextPhr_2</Key>
+    <Value>der, die, der/die, das</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelSuffixPhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelSuffixTextPhr_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelBracksPhr_2</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelBracksTextPhr_2</Key>
+    <Value>()[]{}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzDelStylesPhr_2</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzReplacePhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPuzReplaceTextPhr_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelPrefixPhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelPrefixTextPhr_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelSuffixPhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelSuffixTextPhr_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelBracksPhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelBracksTextPhr_2</Key>
+    <Value>()[]{}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudDelStylesPhr_2</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudReplacePhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoAudReplaceTextPhr_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelPrefixPhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelPrefixTextPhr_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelSuffixPhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelSuffixTextPhr_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelBracksPhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelBracksTextPhr_2</Key>
+    <Value>()[]{}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoDelStylesPhr_2</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoReplacePhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPhoReplaceTextPhr_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelPrefixPhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelPrefixTextPhr_2</Key>
+    <Value>der, die, der/die, das</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelSuffixPhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelSuffixTextPhr_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelBracksPhr_2</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelBracksTextPhr_2</Key>
+    <Value>()[]{}</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicDelStylesPhr_2</Key>
+    <Value>1</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicReplacePhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoPicReplaceTextPhr_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelPrefixPhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelPrefixTextPhr_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelSuffixPhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelSuffixTextPhr_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelBracksPhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelBracksTextPhr_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidDelStylesPhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidReplacePhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoVidReplaceTextPhr_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelPrefixPhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelPrefixTextPhr_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelSuffixPhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelSuffixTextPhr_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelBracksPhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelBracksTextPhr_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtDelStylesPhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtReplacePhr_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <VProperty>
+    <Key>AutoTxtReplaceTextPhr_2</Key>
+    <Value />
+  </VProperty>
+  <VProperty>
+    <Key>AutoRigUseInf_2</Key>
+    <Value>0</Value>
+  </VProperty>
+  <Style>
+    <Nr>0</Nr>
+    <StyleName>Text normal</StyleName>
+    <Shortcut>0</Shortcut>
+    <FontName>Arial</FontName>
+    <Size>14</Size>
+    <Color>0</Color>
+    <Bold>false</Bold>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <StrikeThrough>false</StrikeThrough>
+    <SuperScript>false</SuperScript>
+    <SubScript>false</SubScript>
+    <Hidden>false</Hidden>
+    <Backwards>false</Backwards>
+    <FixStyle>00000000000</FixStyle>
+    <AutoRigDel>false</AutoRigDel>
+    <AutoPuzDel>false</AutoPuzDel>
+    <AutoAudDel>false</AutoAudDel>
+    <AutoPhoDel>false</AutoPhoDel>
+    <ColorType>1</ColorType>
+    <RightToLeft>false</RightToLeft>
+  </Style>
+  <Style>
+    <Nr>1</Nr>
+    <StyleName>Text fett</StyleName>
+    <Shortcut>f</Shortcut>
+    <FontName>Arial</FontName>
+    <Size>0</Size>
+    <Color>0</Color>
+    <Bold>true</Bold>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <StrikeThrough>false</StrikeThrough>
+    <SuperScript>false</SuperScript>
+    <SubScript>false</SubScript>
+    <Hidden>false</Hidden>
+    <Backwards>false</Backwards>
+    <FixStyle>00000000000</FixStyle>
+    <AutoRigDel>false</AutoRigDel>
+    <AutoPuzDel>false</AutoPuzDel>
+    <AutoAudDel>false</AutoAudDel>
+    <AutoPhoDel>false</AutoPhoDel>
+    <ColorType>2</ColorType>
+    <RightToLeft>false</RightToLeft>
+  </Style>
+  <Style>
+    <Nr>2</Nr>
+    <StyleName>Text kursiv</StyleName>
+    <Shortcut>i</Shortcut>
+    <FontName>Arial</FontName>
+    <Size>0</Size>
+    <Color>0</Color>
+    <Bold>false</Bold>
+    <Italic>true</Italic>
+    <Underline>false</Underline>
+    <StrikeThrough>false</StrikeThrough>
+    <SuperScript>false</SuperScript>
+    <SubScript>false</SubScript>
+    <Hidden>false</Hidden>
+    <Backwards>false</Backwards>
+    <FixStyle>00000000000</FixStyle>
+    <AutoRigDel>false</AutoRigDel>
+    <AutoPuzDel>false</AutoPuzDel>
+    <AutoAudDel>false</AutoAudDel>
+    <AutoPhoDel>false</AutoPhoDel>
+    <ColorType>3</ColorType>
+    <RightToLeft>false</RightToLeft>
+  </Style>
+  <Style>
+    <Nr>3</Nr>
+    <StyleName>Text unterstrichen</StyleName>
+    <Shortcut>u</Shortcut>
+    <FontName>Arial</FontName>
+    <Size>0</Size>
+    <Color>0</Color>
+    <Bold>false</Bold>
+    <Italic>false</Italic>
+    <Underline>true</Underline>
+    <StrikeThrough>false</StrikeThrough>
+    <SuperScript>false</SuperScript>
+    <SubScript>false</SubScript>
+    <Hidden>false</Hidden>
+    <Backwards>false</Backwards>
+    <FixStyle>00000000000</FixStyle>
+    <AutoRigDel>false</AutoRigDel>
+    <AutoPuzDel>false</AutoPuzDel>
+    <AutoAudDel>false</AutoAudDel>
+    <AutoPhoDel>false</AutoPhoDel>
+    <ColorType>4</ColorType>
+    <RightToLeft>false</RightToLeft>
+  </Style>
+  <Style>
+    <Nr>4</Nr>
+    <StyleName>Grammatik normal</StyleName>
+    <Shortcut>k</Shortcut>
+    <FontName>Arial</FontName>
+    <Size>0</Size>
+    <Color>8410880</Color>
+    <Bold>false</Bold>
+    <Italic>true</Italic>
+    <Underline>false</Underline>
+    <StrikeThrough>false</StrikeThrough>
+    <SuperScript>false</SuperScript>
+    <SubScript>false</SubScript>
+    <Hidden>false</Hidden>
+    <Backwards>false</Backwards>
+    <FixStyle>00000000000</FixStyle>
+    <AutoRigDel>true</AutoRigDel>
+    <AutoPuzDel>true</AutoPuzDel>
+    <AutoAudDel>true</AutoAudDel>
+    <AutoPhoDel>true</AutoPhoDel>
+    <ColorType>5</ColorType>
+    <RightToLeft>false</RightToLeft>
+  </Style>
+  <Style>
+    <Nr>5</Nr>
+    <StyleName>Grammatik fett</StyleName>
+    <Shortcut>g</Shortcut>
+    <FontName>Arial</FontName>
+    <Size>0</Size>
+    <Color>8410880</Color>
+    <Bold>true</Bold>
+    <Italic>true</Italic>
+    <Underline>false</Underline>
+    <StrikeThrough>false</StrikeThrough>
+    <SuperScript>false</SuperScript>
+    <SubScript>false</SubScript>
+    <Hidden>false</Hidden>
+    <Backwards>false</Backwards>
+    <FixStyle>00000000000</FixStyle>
+    <AutoRigDel>true</AutoRigDel>
+    <AutoPuzDel>true</AutoPuzDel>
+    <AutoAudDel>true</AutoAudDel>
+    <AutoPhoDel>true</AutoPhoDel>
+    <ColorType>6</ColorType>
+    <RightToLeft>false</RightToLeft>
+  </Style>
+  <Style>
+    <Nr>6</Nr>
+    <StyleName>Grammatik unterstrichen</StyleName>
+    <Shortcut>v</Shortcut>
+    <FontName>Arial</FontName>
+    <Size>0</Size>
+    <Color>8410880</Color>
+    <Bold>false</Bold>
+    <Italic>true</Italic>
+    <Underline>true</Underline>
+    <StrikeThrough>false</StrikeThrough>
+    <SuperScript>false</SuperScript>
+    <SubScript>false</SubScript>
+    <Hidden>false</Hidden>
+    <Backwards>false</Backwards>
+    <FixStyle>00000000000</FixStyle>
+    <AutoRigDel>true</AutoRigDel>
+    <AutoPuzDel>true</AutoPuzDel>
+    <AutoAudDel>true</AutoAudDel>
+    <AutoPhoDel>true</AutoPhoDel>
+    <ColorType>7</ColorType>
+    <RightToLeft>false</RightToLeft>
+  </Style>
+  <Style>
+    <Nr>7</Nr>
+    <StyleName>Text rot</StyleName>
+    <Shortcut>r</Shortcut>
+    <FontName>Arial</FontName>
+    <Size>0</Size>
+    <Color>10465</Color>
+    <Bold>false</Bold>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <StrikeThrough>false</StrikeThrough>
+    <SuperScript>false</SuperScript>
+    <SubScript>false</SubScript>
+    <Hidden>false</Hidden>
+    <Backwards>false</Backwards>
+    <FixStyle>00000000000</FixStyle>
+    <AutoRigDel>false</AutoRigDel>
+    <AutoPuzDel>false</AutoPuzDel>
+    <AutoAudDel>false</AutoAudDel>
+    <AutoPhoDel>false</AutoPhoDel>
+    <ColorType>8</ColorType>
+    <RightToLeft>false</RightToLeft>
+  </Style>
+  <Style>
+    <Nr>8</Nr>
+    <StyleName>Text blau</StyleName>
+    <Shortcut>b</Shortcut>
+    <FontName>Arial</FontName>
+    <Size>0</Size>
+    <Color>11170560</Color>
+    <Bold>false</Bold>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <StrikeThrough>false</StrikeThrough>
+    <SuperScript>false</SuperScript>
+    <SubScript>false</SubScript>
+    <Hidden>false</Hidden>
+    <Backwards>false</Backwards>
+    <FixStyle>00000000000</FixStyle>
+    <AutoRigDel>false</AutoRigDel>
+    <AutoPuzDel>false</AutoPuzDel>
+    <AutoAudDel>false</AutoAudDel>
+    <AutoPhoDel>false</AutoPhoDel>
+    <ColorType>12</ColorType>
+    <RightToLeft>false</RightToLeft>
+  </Style>
+  <Style>
+    <Nr>9</Nr>
+    <StyleName>Text blau fett</StyleName>
+    <Shortcut>c</Shortcut>
+    <FontName>Arial</FontName>
+    <Size>0</Size>
+    <Color>11170560</Color>
+    <Bold>true</Bold>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <StrikeThrough>false</StrikeThrough>
+    <SuperScript>false</SuperScript>
+    <SubScript>false</SubScript>
+    <Hidden>false</Hidden>
+    <Backwards>false</Backwards>
+    <FixStyle>00000000000</FixStyle>
+    <AutoRigDel>false</AutoRigDel>
+    <AutoPuzDel>false</AutoPuzDel>
+    <AutoAudDel>false</AutoAudDel>
+    <AutoPhoDel>false</AutoPhoDel>
+    <ColorType>12</ColorType>
+    <RightToLeft>false</RightToLeft>
+  </Style>
+  <Style>
+    <Nr>10</Nr>
+    <StyleName>Text blau unterstrichen</StyleName>
+    <Shortcut>d</Shortcut>
+    <FontName>Arial</FontName>
+    <Size>0</Size>
+    <Color>11170560</Color>
+    <Bold>false</Bold>
+    <Italic>false</Italic>
+    <Underline>true</Underline>
+    <StrikeThrough>false</StrikeThrough>
+    <SuperScript>false</SuperScript>
+    <SubScript>false</SubScript>
+    <Hidden>false</Hidden>
+    <Backwards>false</Backwards>
+    <FixStyle>00000000000</FixStyle>
+    <AutoRigDel>false</AutoRigDel>
+    <AutoPuzDel>false</AutoPuzDel>
+    <AutoAudDel>false</AutoAudDel>
+    <AutoPhoDel>false</AutoPhoDel>
+    <ColorType>12</ColorType>
+    <RightToLeft>false</RightToLeft>
+  </Style>
+  <Style>
+    <Nr>11</Nr>
+    <StyleName>* Vokabeln</StyleName>
+    <Shortcut>+</Shortcut>
+    <FontName>Arial</FontName>
+    <Size>0</Size>
+    <Color>0</Color>
+    <Bold>false</Bold>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <StrikeThrough>false</StrikeThrough>
+    <SuperScript>false</SuperScript>
+    <SubScript>false</SubScript>
+    <Hidden>false</Hidden>
+    <Backwards>false</Backwards>
+    <FixStyle>00000000000</FixStyle>
+    <AutoRigDel>false</AutoRigDel>
+    <AutoPuzDel>false</AutoPuzDel>
+    <AutoAudDel>false</AutoAudDel>
+    <AutoPhoDel>false</AutoPhoDel>
+    <ColorType>18</ColorType>
+    <RightToLeft>false</RightToLeft>
+  </Style>
+  <Style>
+    <Nr>12</Nr>
+    <StyleName>* Sätze</StyleName>
+    <Shortcut>+</Shortcut>
+    <FontName>Arial</FontName>
+    <Size>-2</Size>
+    <Color>11170560</Color>
+    <Bold>false</Bold>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <StrikeThrough>false</StrikeThrough>
+    <SuperScript>false</SuperScript>
+    <SubScript>false</SubScript>
+    <Hidden>false</Hidden>
+    <Backwards>false</Backwards>
+    <FixStyle>01100000000</FixStyle>
+    <AutoRigDel>false</AutoRigDel>
+    <AutoPuzDel>false</AutoPuzDel>
+    <AutoAudDel>false</AutoAudDel>
+    <AutoPhoDel>false</AutoPhoDel>
+    <ColorType>19</ColorType>
+    <RightToLeft>false</RightToLeft>
+  </Style>
+  <Style>
+    <Nr>13</Nr>
+    <StyleName>* Lücken</StyleName>
+    <Shortcut>+</Shortcut>
+    <FontName>Arial</FontName>
+    <Size>0</Size>
+    <Color>0</Color>
+    <Bold>false</Bold>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <StrikeThrough>false</StrikeThrough>
+    <SuperScript>false</SuperScript>
+    <SubScript>false</SubScript>
+    <Hidden>false</Hidden>
+    <Backwards>false</Backwards>
+    <FixStyle>00000000000</FixStyle>
+    <AutoRigDel>false</AutoRigDel>
+    <AutoPuzDel>false</AutoPuzDel>
+    <AutoAudDel>false</AutoAudDel>
+    <AutoPhoDel>false</AutoPhoDel>
+    <ColorType>20</ColorType>
+    <RightToLeft>false</RightToLeft>
+  </Style>
+  <Style>
+    <Nr>14</Nr>
+    <StyleName>* Vorgegeben</StyleName>
+    <Shortcut>+</Shortcut>
+    <FontName>Arial</FontName>
+    <Size>0</Size>
+    <Color>0</Color>
+    <Bold>false</Bold>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <StrikeThrough>false</StrikeThrough>
+    <SuperScript>false</SuperScript>
+    <SubScript>false</SubScript>
+    <Hidden>false</Hidden>
+    <Backwards>false</Backwards>
+    <FixStyle>00000000000</FixStyle>
+    <AutoRigDel>false</AutoRigDel>
+    <AutoPuzDel>false</AutoPuzDel>
+    <AutoAudDel>false</AutoAudDel>
+    <AutoPhoDel>false</AutoPhoDel>
+    <ColorType>21</ColorType>
+    <RightToLeft>false</RightToLeft>
+  </Style>
+  <Style>
+    <Nr>15</Nr>
+    <StyleName>* Richtig</StyleName>
+    <Shortcut>+</Shortcut>
+    <FontName>Arial</FontName>
+    <Size>0</Size>
+    <Color>4632425</Color>
+    <Bold>false</Bold>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <StrikeThrough>false</StrikeThrough>
+    <SuperScript>false</SuperScript>
+    <SubScript>false</SubScript>
+    <Hidden>false</Hidden>
+    <Backwards>false</Backwards>
+    <FixStyle>00100000000</FixStyle>
+    <AutoRigDel>false</AutoRigDel>
+    <AutoPuzDel>false</AutoPuzDel>
+    <AutoAudDel>false</AutoAudDel>
+    <AutoPhoDel>false</AutoPhoDel>
+    <ColorType>22</ColorType>
+    <RightToLeft>false</RightToLeft>
+  </Style>
+  <Style>
+    <Nr>16</Nr>
+    <StyleName>* Falsch</StyleName>
+    <Shortcut>+</Shortcut>
+    <FontName>Arial</FontName>
+    <Size>0</Size>
+    <Color>10465</Color>
+    <Bold>false</Bold>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <StrikeThrough>false</StrikeThrough>
+    <SuperScript>false</SuperScript>
+    <SubScript>false</SubScript>
+    <Hidden>false</Hidden>
+    <Backwards>false</Backwards>
+    <FixStyle>00100000000</FixStyle>
+    <AutoRigDel>false</AutoRigDel>
+    <AutoPuzDel>false</AutoPuzDel>
+    <AutoAudDel>false</AutoAudDel>
+    <AutoPhoDel>false</AutoPhoDel>
+    <ColorType>23</ColorType>
+    <RightToLeft>false</RightToLeft>
+  </Style>
+  <Style>
+    <Nr>17</Nr>
+    <StyleName>* Info</StyleName>
+    <Shortcut>+</Shortcut>
+    <FontName>Arial</FontName>
+    <Size>0</Size>
+    <Color>11170560</Color>
+    <Bold>false</Bold>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <StrikeThrough>false</StrikeThrough>
+    <SuperScript>false</SuperScript>
+    <SubScript>false</SubScript>
+    <Hidden>false</Hidden>
+    <Backwards>false</Backwards>
+    <FixStyle>00100000000</FixStyle>
+    <AutoRigDel>false</AutoRigDel>
+    <AutoPuzDel>false</AutoPuzDel>
+    <AutoAudDel>false</AutoAudDel>
+    <AutoPhoDel>false</AutoPhoDel>
+    <ColorType>24</ColorType>
+    <RightToLeft>false</RightToLeft>
+  </Style>
+  <Style>
+    <Nr>18</Nr>
+    <StyleName>* Rätsel</StyleName>
+    <Shortcut>+</Shortcut>
+    <FontName>Arial</FontName>
+    <Size>0</Size>
+    <Color>0</Color>
+    <Bold>false</Bold>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <StrikeThrough>false</StrikeThrough>
+    <SuperScript>false</SuperScript>
+    <SubScript>false</SubScript>
+    <Hidden>false</Hidden>
+    <Backwards>false</Backwards>
+    <FixStyle>00000000000</FixStyle>
+    <AutoRigDel>false</AutoRigDel>
+    <AutoPuzDel>false</AutoPuzDel>
+    <AutoAudDel>false</AutoAudDel>
+    <AutoPhoDel>false</AutoPhoDel>
+    <ColorType>25</ColorType>
+    <RightToLeft>false</RightToLeft>
+  </Style>
+  <Style>
+    <Nr>19</Nr>
+    <StyleName>* Zwischentexte</StyleName>
+    <Shortcut>+</Shortcut>
+    <FontName>Arial</FontName>
+    <Size>0</Size>
+    <Color>0</Color>
+    <Bold>false</Bold>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <StrikeThrough>false</StrikeThrough>
+    <SuperScript>false</SuperScript>
+    <SubScript>false</SubScript>
+    <Hidden>false</Hidden>
+    <Backwards>false</Backwards>
+    <FixStyle>00000000000</FixStyle>
+    <AutoRigDel>false</AutoRigDel>
+    <AutoPuzDel>false</AutoPuzDel>
+    <AutoAudDel>false</AutoAudDel>
+    <AutoPhoDel>false</AutoPhoDel>
+    <ColorType>26</ColorType>
+    <RightToLeft>false</RightToLeft>
+  </Style>
+  <Style>
+    <Nr>20</Nr>
+    <StyleName>* Media-Pfade</StyleName>
+    <Shortcut>+</Shortcut>
+    <FontName>Arial</FontName>
+    <Size>-2</Size>
+    <Color>0</Color>
+    <Bold>false</Bold>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <StrikeThrough>false</StrikeThrough>
+    <SuperScript>false</SuperScript>
+    <SubScript>false</SubScript>
+    <Hidden>false</Hidden>
+    <Backwards>false</Backwards>
+    <FixStyle>01000000000</FixStyle>
+    <AutoRigDel>false</AutoRigDel>
+    <AutoPuzDel>false</AutoPuzDel>
+    <AutoAudDel>false</AutoAudDel>
+    <AutoPhoDel>false</AutoPhoDel>
+    <ColorType>27</ColorType>
+    <RightToLeft>false</RightToLeft>
+  </Style>
+  <Style>
+    <Nr>21</Nr>
+    <StyleName>* Lautschrift</StyleName>
+    <Shortcut>+</Shortcut>
+    <FontName>Arial</FontName>
+    <Size>0</Size>
+    <Color>7882240</Color>
+    <Bold>false</Bold>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <StrikeThrough>false</StrikeThrough>
+    <SuperScript>false</SuperScript>
+    <SubScript>false</SubScript>
+    <Hidden>false</Hidden>
+    <Backwards>false</Backwards>
+    <FixStyle>00100000000</FixStyle>
+    <AutoRigDel>false</AutoRigDel>
+    <AutoPuzDel>false</AutoPuzDel>
+    <AutoAudDel>false</AutoAudDel>
+    <AutoPhoDel>false</AutoPhoDel>
+    <ColorType>28</ColorType>
+    <RightToLeft>false</RightToLeft>
+  </Style>
+  <Voc>
+    <Nr>1</Nr>
+    <Hash>1730472022</Hash>
+    <Englisch>settler</Englisch>
+    <Deutsch>Siedler, Siedlerin</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]settler[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Siedler[/lin]
+  [lin][sep], [/sep]Siedlerin[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>2</Nr>
+    <Hash>1509255988</Hash>
+    <Englisch>economic</Englisch>
+    <Deutsch>wirtschaftlich</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]economic[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]wirtschaftlich[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>3</Nr>
+    <Hash>1591463092</Hash>
+    <Englisch>ideological</Englisch>
+    <Deutsch>ideologisch</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]ideological[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]ideologisch[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>4</Nr>
+    <Hash>1349351292</Hash>
+    <Englisch>pilgrim</Englisch>
+    <Deutsch>Pilger, Pilgerin</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]pilgrim[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Pilger[/lin]
+  [lin][sep], [/sep]Pilgerin[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>5</Nr>
+    <Hash>777751900</Hash>
+    <Englisch>adherence to</Englisch>
+    <Deutsch>Festhalten an</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]adherence to[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Festhalten an[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>6</Nr>
+    <Hash>67618018</Hash>
+    <Englisch>exert one´s influence</Englisch>
+    <Deutsch>seinen Einfluss geltend machen</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]exert one´s influence[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]seinen Einfluss geltend machen[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>7</Nr>
+    <Hash>2122039021</Hash>
+    <Englisch>colony</Englisch>
+    <Deutsch>Kolonie</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]colony[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Kolonie[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>8</Nr>
+    <Hash>-1367836259</Hash>
+    <Englisch>rebel</Englisch>
+    <Deutsch>rebellieren, sich erheben</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]rebel[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]rebellieren[/lin]
+  [lin][sep], [/sep]sich erheben[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>9</Nr>
+    <Hash>-215433272</Hash>
+    <Englisch>impose</Englisch>
+    <Deutsch>verhängen, erlassen</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]impose[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]verhängen[/lin]
+  [lin][sep], [/sep]erlassen[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>10</Nr>
+    <Hash>-1042506440</Hash>
+    <Englisch>tax</Englisch>
+    <Deutsch>Steuer</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]tax[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Steuer[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>11</Nr>
+    <Hash>1762545627</Hash>
+    <Englisch>colonist</Englisch>
+    <Deutsch>Siedler, Siedlerin, Kolonist, Kolonistin</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]colonist[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Siedler[/lin]
+  [lin][sep], [/sep]Siedlerin[/lin]
+  [lin][sep], [/sep]Kolonist[/lin]
+  [lin][sep], [/sep]Kolonistin[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>12</Nr>
+    <Hash>1444408659</Hash>
+    <Englisch>violation</Englisch>
+    <Deutsch>Verletzung</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]violation[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Verletzung[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>13</Nr>
+    <Hash>1889864142</Hash>
+    <Englisch>citizen</Englisch>
+    <Deutsch>Bürger, Bürgerin</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]citizen[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Bürger[/lin]
+  [lin][sep], [/sep]Bürgerin[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>14</Nr>
+    <Hash>-1303860555</Hash>
+    <Englisch>Declaration of Independence</Englisch>
+    <Deutsch>Unabhängigkeitserklärung</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]Declaration of Independence[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Unabhängigkeitserklärung[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>15</Nr>
+    <Hash>1303260333</Hash>
+    <Englisch>Founding Fathers</Englisch>
+    <Deutsch>Gründerväter</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]Founding Fathers[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Gründerväter[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>16</Nr>
+    <Hash>-1236948240</Hash>
+    <Englisch>divisive</Englisch>
+    <Deutsch>kontrovers, Uneinigkeit stiften</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]divisive[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]kontrovers[/lin]
+  [lin][sep], [/sep]Uneinigkeit stiften[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>17</Nr>
+    <Hash>473079677</Hash>
+    <Englisch>loyalist</Englisch>
+    <Deutsch>Loyalist, Loyalistin</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]loyalist[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Loyalist[/lin]
+  [lin][sep], [/sep]Loyalistin[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>18</Nr>
+    <Hash>-2007350062</Hash>
+    <Englisch>Revolutionary War</Englisch>
+    <Deutsch>Revolutionskrieg</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]Revolutionary War[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Revolutionskrieg[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>19</Nr>
+    <Hash>1149100531</Hash>
+    <Englisch>manifest destiny</Englisch>
+    <Deutsch>offenbare/ selbstständige Bestimmung</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]manifest destiny[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]offenbare/ selbstständige Bestimmung[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>20</Nr>
+    <Hash>1871281496</Hash>
+    <Englisch>pioneer spirit</Englisch>
+    <Deutsch>Pioniergeist</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]pioneer spirit[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Pioniergeist[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>21</Nr>
+    <Hash>187641877</Hash>
+    <Englisch>Wild West</Englisch>
+    <Deutsch>Wilder Westen</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]Wild West[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Wilder Westen[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>22</Nr>
+    <Hash>632548156</Hash>
+    <Englisch>Indian</Englisch>
+    <Deutsch>Indianer, Indianerin</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]Indian[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Indianer[/lin]
+  [lin][sep], [/sep]Indianerin[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>23</Nr>
+    <Hash>2049469361</Hash>
+    <Englisch>Civil War</Englisch>
+    <Deutsch>Bürgerkrieg</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]Civil War[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Bürgerkrieg[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>24</Nr>
+    <Hash>658880193</Hash>
+    <Englisch>secession</Englisch>
+    <Deutsch>Abspaltung</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]secession[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Abspaltung[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>25</Nr>
+    <Hash>-2059834878</Hash>
+    <Englisch>abolish</Englisch>
+    <Deutsch>abschaffen</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]abolish[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]abschaffen[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>26</Nr>
+    <Hash>-608511784</Hash>
+    <Englisch>slavery</Englisch>
+    <Deutsch>Sklaverei</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]slavery[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Sklaverei[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>27</Nr>
+    <Hash>1993005121</Hash>
+    <Englisch>pit</Englisch>
+    <Deutsch>antreten lassen</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]pit[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]antreten lassen[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>28</Nr>
+    <Hash>998093481</Hash>
+    <Englisch>Confenderacy</Englisch>
+    <Deutsch>Konföderation, die Konföderierten Staaten von Amerika</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]Confenderacy[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Konföderation[/lin]
+  [lin][sep], [/sep]die Konföderierten Staaten von Amerika[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>29</Nr>
+    <Hash>-1384615584</Hash>
+    <Englisch>Union</Englisch>
+    <Deutsch>Union, die Nordstaaten</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]Union[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Union[/lin]
+  [lin][sep], [/sep]die Nordstaaten[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>30</Nr>
+    <Hash>-2049167475</Hash>
+    <Englisch>Gret Depression</Englisch>
+    <Deutsch>Weltwirtschaftskrise</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]Gret Depression[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Weltwirtschaftskrise[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>31</Nr>
+    <Hash>578572661</Hash>
+    <Englisch>boost the economy</Englisch>
+    <Deutsch>die Wirtschaft ankurbeln</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]boost the economy[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]die Wirtschaft ankurbeln[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>32</Nr>
+    <Hash>-545774856</Hash>
+    <Englisch>Marshall Plan</Englisch>
+    <Deutsch>Marshallplan</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]Marshall Plan[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Marshallplan[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>33</Nr>
+    <Hash>1634700677</Hash>
+    <Englisch>Superpower</Englisch>
+    <Deutsch>Supermacht</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]Superpower[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Supermacht[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>34</Nr>
+    <Hash>-1872543270</Hash>
+    <Englisch>Cold War</Englisch>
+    <Deutsch>Kalter Krieg</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]Cold War[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Kalter Krieg[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>35</Nr>
+    <Hash>-836435450</Hash>
+    <Englisch>Soviet Union</Englisch>
+    <Deutsch>Sowjetunion</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]Soviet Union[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Sowjetunion[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>36</Nr>
+    <Hash>-1183299401</Hash>
+    <Englisch>Vietnam War</Englisch>
+    <Deutsch>Vietnamkrieg</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]Vietnam War[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Vietnamkrieg[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>37</Nr>
+    <Hash>2112587073</Hash>
+    <Englisch>prosperity</Englisch>
+    <Deutsch>Wohlstand</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]prosperity[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Wohlstand[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>38</Nr>
+    <Hash>-1874308002</Hash>
+    <Englisch>space exploration</Englisch>
+    <Deutsch>Weltraumforschung</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]space exploration[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Weltraumforschung[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>39</Nr>
+    <Hash>2080791711</Hash>
+    <Englisch>entrepreneurship</Englisch>
+    <Deutsch>Unternehmertum</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]entrepreneurship[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Unternehmertum[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>40</Nr>
+    <Hash>980904260</Hash>
+    <Englisch>military</Englisch>
+    <Deutsch>Militär</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]military[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Militär[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>41</Nr>
+    <Hash>1541965944</Hash>
+    <Englisch>Republican Party</Englisch>
+    <Deutsch>republikanische Partei</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]Republican Party[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]republikanische Partei[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>42</Nr>
+    <Hash>-956976825</Hash>
+    <Englisch>efect sb. president</Englisch>
+    <Deutsch>jdn. zum Präsidenten wählen</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]efect sb. president[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]jdn. zum Präsidenten wählen[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>43</Nr>
+    <Hash>-1081027397</Hash>
+    <Englisch>narrow margin</Englisch>
+    <Deutsch>kleiner Vorsprung</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]narrow margin[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]kleiner Vorsprung[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>44</Nr>
+    <Hash>440790672</Hash>
+    <Englisch>Conservatives</Englisch>
+    <Deutsch>Konservative</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]Conservatives[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Konservative[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>45</Nr>
+    <Hash>888484239</Hash>
+    <Englisch>value</Englisch>
+    <Deutsch>Wert</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]value[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Wert[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>46</Nr>
+    <Hash>117603920</Hash>
+    <Englisch>Liberals</Englisch>
+    <Deutsch>Liberale</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]Liberals[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Liberale[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>47</Nr>
+    <Hash>1378459584</Hash>
+    <Englisch>Democratic Party</Englisch>
+    <Deutsch>demokratische Partei</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]Democratic Party[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]demokratische Partei[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>48</Nr>
+    <Hash>860732992</Hash>
+    <Englisch>War on Terror</Englisch>
+    <Deutsch>Kamp gegen den Terror(ismus)</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]War on Terror[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Kamp gegen den Terror(ismus)[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>49</Nr>
+    <Hash>1046098148</Hash>
+    <Englisch>invade</Englisch>
+    <Deutsch>einmaschieren in</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]invade[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]einmaschieren in[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>50</Nr>
+    <Hash>-154692923</Hash>
+    <Englisch>9/11</Englisch>
+    <Deutsch>Terroranschläge am 11. September 2001</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]9/11[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Terroranschläge am 11. September 2001[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>51</Nr>
+    <Hash>-1914285012</Hash>
+    <Englisch>weapons of mass destruction</Englisch>
+    <Deutsch>Massenvernichtungswaffen</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]weapons of mass destruction[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Massenvernichtungswaffen[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>52</Nr>
+    <Hash>-87648339</Hash>
+    <Englisch>troops</Englisch>
+    <Deutsch>Truppen, Armee</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]troops[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Truppen[/lin]
+  [lin][sep], [/sep]Armee[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>53</Nr>
+    <Hash>1356181042</Hash>
+    <Englisch>subprime mortgage</Englisch>
+    <Deutsch>Hypothenkendarlehen an Personen mit schlechter Bonität</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]subprime mortgage[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Hypothenkendarlehen an Personen mit schlechter Bonität[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>54</Nr>
+    <Hash>-1750555334</Hash>
+    <Englisch>financial crisis</Englisch>
+    <Deutsch>Finanzkrise</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]financial crisis[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Finanzkrise[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>55</Nr>
+    <Hash>-1580629875</Hash>
+    <Englisch>ancestor</Englisch>
+    <Deutsch>Vorfahr</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]ancestor[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Vorfahr[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>56</Nr>
+    <Hash>1877337947</Hash>
+    <Englisch>to foster</Englisch>
+    <Deutsch>fördern</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]to foster[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]fördern[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>57</Nr>
+    <Hash>-737899312</Hash>
+    <Englisch>sacrifice</Englisch>
+    <Deutsch>Opfer</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]sacrifice[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Opfer[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>58</Nr>
+    <Hash>1445293281</Hash>
+    <Englisch>to endure</Englisch>
+    <Deutsch>erfahren, erleiden</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]to endure[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]erfahren[/lin]
+  [lin][sep], [/sep]erleiden[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>59</Nr>
+    <Hash>-153718167</Hash>
+    <Englisch>on the brink of</Englisch>
+    <Deutsch>am Rande von</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]on the brink of[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]am Rande von[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>60</Nr>
+    <Hash>267715801</Hash>
+    <Englisch>absorption</Englisch>
+    <Deutsch>Einverleibung</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]absorption[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Einverleibung[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>61</Nr>
+    <Hash>1060940822</Hash>
+    <Englisch>severe</Englisch>
+    <Deutsch>ernst, schwer</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]severe[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]ernst[/lin]
+  [lin][sep], [/sep]schwer[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>62</Nr>
+    <Hash>2101265609</Hash>
+    <Englisch>to partition</Englisch>
+    <Deutsch>aufteilen</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]to partition[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]aufteilen[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>63</Nr>
+    <Hash>1510017515</Hash>
+    <Englisch>assassination</Englisch>
+    <Deutsch>Attentat, Ermordung</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]assassination[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Attentat[/lin]
+  [lin][sep], [/sep]Ermordung[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>64</Nr>
+    <Hash>965579197</Hash>
+    <Englisch>succession</Englisch>
+    <Deutsch>Folge, Reihe</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]succession[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Folge[/lin]
+  [lin][sep], [/sep]Reihe[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>65</Nr>
+    <Hash>579867000</Hash>
+    <Englisch>to vow</Englisch>
+    <Deutsch>schwören</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]to vow[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]schwören[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>66</Nr>
+    <Hash>790052905</Hash>
+    <Englisch>as bold as brass</Englisch>
+    <Deutsch>unverfroren</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]as bold as brass[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]unverfroren[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>67</Nr>
+    <Hash>696809120</Hash>
+    <Englisch>to grumble</Englisch>
+    <Deutsch>meckern</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]to grumble[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]meckern[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>68</Nr>
+    <Hash>2048927999</Hash>
+    <Englisch>poultry</Englisch>
+    <Deutsch>Geflügel</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]poultry[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Geflügel[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>69</Nr>
+    <Hash>-1847662318</Hash>
+    <Englisch>to moan</Englisch>
+    <Deutsch>stöhnen</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]to moan[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]stöhnen[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>70</Nr>
+    <Hash>-2138144809</Hash>
+    <Englisch>to mutter</Englisch>
+    <Deutsch>raunen, murmeln</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]to mutter[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]raunen[/lin]
+  [lin][sep], [/sep]murmeln[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>71</Nr>
+    <Hash>1210912340</Hash>
+    <Englisch>to tingle</Englisch>
+    <Deutsch>prickeln, kribbeln</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]to tingle[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]prickeln[/lin]
+  [lin][sep], [/sep]kribbeln[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>72</Nr>
+    <Hash>-1614283933</Hash>
+    <Englisch>fleece</Englisch>
+    <Deutsch>Schaffell</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]fleece[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Schaffell[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>73</Nr>
+    <Hash>2069671188</Hash>
+    <Englisch>fabric</Englisch>
+    <Deutsch>Stoff</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]fabric[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Stoff[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>74</Nr>
+    <Hash>-2124938917</Hash>
+    <Englisch>contagious</Englisch>
+    <Deutsch>ansteckend</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]contagious[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]ansteckend[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>75</Nr>
+    <Hash>668486242</Hash>
+    <Englisch>to trail</Englisch>
+    <Deutsch>(hinterher)trotten</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]to trail[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin](hinterher)trotten[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>76</Nr>
+    <Hash>1839012764</Hash>
+    <Englisch>loom</Englisch>
+    <Deutsch>Webstuhl</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]loom[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Webstuhl[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>77</Nr>
+    <Hash>-882370747</Hash>
+    <Englisch>to nudge</Englisch>
+    <Deutsch>(an)stoßen</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]to nudge[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin](an)stoßen[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>78</Nr>
+    <Hash>1373910602</Hash>
+    <Englisch>to carve</Englisch>
+    <Deutsch>schnitzen</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]to carve[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]schnitzen[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>79</Nr>
+    <Hash>418614486</Hash>
+    <Englisch>to shoo sb off</Englisch>
+    <Deutsch>(weg)scheuchen</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]to shoo sb off[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin](weg)scheuchen[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>80</Nr>
+    <Hash>2093228340</Hash>
+    <Englisch>to smudge</Englisch>
+    <Deutsch>verschmieren</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]to smudge[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]verschmieren[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>81</Nr>
+    <Hash>-1654437615</Hash>
+    <Englisch>sooty</Englisch>
+    <Deutsch>verrußt, rußig</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]sooty[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]verrußt[/lin]
+  [lin][sep], [/sep]rußig[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>82</Nr>
+    <Hash>723544822</Hash>
+    <Englisch>to bulge</Englisch>
+    <Deutsch>(sich) wölben</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]to bulge[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin](sich) wölben[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>83</Nr>
+    <Hash>-162263802</Hash>
+    <Englisch>to squash</Englisch>
+    <Deutsch>platt drücken</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]to squash[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]platt drücken[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>84</Nr>
+    <Hash>-1164184421</Hash>
+    <Englisch>nostril</Englisch>
+    <Deutsch>Nasenloch</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]nostril[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Nasenloch[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>85</Nr>
+    <Hash>-1009145336</Hash>
+    <Englisch>to tease</Englisch>
+    <Deutsch>necken, ärgern</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]to tease[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]necken[/lin]
+  [lin][sep], [/sep]ärgern[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>86</Nr>
+    <Hash>-830904078</Hash>
+    <Englisch>crimson</Englisch>
+    <Deutsch>purpurrot</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]crimson[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]purpurrot[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>87</Nr>
+    <Hash>28364265</Hash>
+    <Englisch>to mumble</Englisch>
+    <Deutsch>murmeln, nuscheln</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]to mumble[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]murmeln[/lin]
+  [lin][sep], [/sep]nuscheln[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>88</Nr>
+    <Hash>-1735899352</Hash>
+    <Englisch>bin</Englisch>
+    <Deutsch>Tonne, Mülltonne</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]bin[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Tonne[/lin]
+  [lin][sep], [/sep]Mülltonne[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>89</Nr>
+    <Hash>-32155357</Hash>
+    <Englisch>imperial</Englisch>
+    <Deutsch>imperial, aus dem Empire</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]imperial[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]imperial[/lin]
+  [lin][sep], [/sep]aus dem Empire[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>90</Nr>
+    <Hash>194298980</Hash>
+    <Englisch>to wrangle</Englisch>
+    <Deutsch>streiten, zerren</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]to wrangle[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]streiten[/lin]
+  [lin][sep], [/sep]zerren[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>91</Nr>
+    <Hash>-1735532598</Hash>
+    <Englisch>metrication</Englisch>
+    <Deutsch>Umstellung auf das metrische System</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]metrication[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Umstellung auf das metrische System[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>92</Nr>
+    <Hash>-858401098</Hash>
+    <Englisch>deadline</Englisch>
+    <Deutsch>Termin, Frist</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]deadline[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Termin[/lin]
+  [lin][sep], [/sep]Frist[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>93</Nr>
+    <Hash>-1286071820</Hash>
+    <Englisch>move</Englisch>
+    <Deutsch>Schritt, Maßnahme</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]move[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Schritt[/lin]
+  [lin][sep], [/sep]Maßnahme[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>94</Nr>
+    <Hash>-237372417</Hash>
+    <Englisch>produce</Englisch>
+    <Deutsch>Produkt, Produkte, Erzeugnis, Erzeugnisse</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]produce[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Produkt[/lin]
+  [lin][sep], [/sep]Produkte[/lin]
+  [lin][sep], [/sep]Erzeugnis[/lin]
+  [lin][sep], [/sep]Erzeugnisse[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>95</Nr>
+    <Hash>1218450812</Hash>
+    <Englisch>outrage</Englisch>
+    <Deutsch>Empörung</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]outrage[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Empörung[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>96</Nr>
+    <Hash>-588390662</Hash>
+    <Englisch>defiance</Englisch>
+    <Deutsch>Missachtung</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]defiance[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Missachtung[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>97</Nr>
+    <Hash>-82875237</Hash>
+    <Englisch>to convict</Englisch>
+    <Deutsch>verurteilen</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]to convict[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]verurteilen[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>98</Nr>
+    <Hash>-176178590</Hash>
+    <Englisch>to display</Englisch>
+    <Deutsch>zeigen, anzeigen, ausstellen</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]to display[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]zeigen[/lin]
+  [lin][sep], [/sep]anzeigen[/lin]
+  [lin][sep], [/sep]ausstellen[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>99</Nr>
+    <Hash>1854752861</Hash>
+    <Englisch>prosecution</Englisch>
+    <Deutsch>strafrechtliche Verfolgung</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]prosecution[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]strafrechtliche Verfolgung[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>100</Nr>
+    <Hash>1017736442</Hash>
+    <Englisch>significance</Englisch>
+    <Deutsch>Bedeutung</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]significance[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]Bedeutung[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>101</Nr>
+    <Hash>-1962263943</Hash>
+    <Englisch>to prolong</Englisch>
+    <Deutsch>verlängern</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]to prolong[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]verlängern[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+  <Voc>
+    <Nr>102</Nr>
+    <Hash>2122871607</Hash>
+    <Englisch>obsolete</Englisch>
+    <Deutsch>veraltet</Deutsch>
+    <DateCreated>2014-11-30T00:00:00+01:00</DateCreated>
+    <DateChanged>2014-11-30T00:00:00+01:00</DateChanged>
+    <L1>
+[ent]
+ [wrd]
+  [lin]obsolete[/lin]
+ [/wrd]
+[/ent]</L1>
+    <L2>
+[ent]
+ [wrd]
+  [lin]veraltet[/lin]
+ [/wrd]
+[/ent]</L2>
+  </Voc>
+</Vokabeldatei>

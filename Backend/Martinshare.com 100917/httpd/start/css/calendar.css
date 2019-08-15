@@ -1,0 +1,334 @@
+
+    .mvccalcon {
+    overflow: auto;
+    display: inline-block;
+    width: auto;
+    }
+    
+    .calendarheader {
+        background-color: #eee;
+    }
+    
+	.buttoncal {
+	    background: transparent;
+	    border: 0px;
+	    color:#FFFFFF;
+	    float: left;
+	    text-align: left;
+	    padding: 0px 10px 0px 0px;
+        word-wrap: break-word;
+	}
+	
+	
+	.buttoncal:hover {
+	    background:transparent;
+	    border:0px;
+	    color:#61A0FF;
+	    /* old color #FFD700 */
+	    text-decoration: underline;
+	}
+    
+    .mvcalender {
+        position: relative;
+        max-width:300px;
+        height: 295px;
+        
+        
+    }
+    
+    .mvcalendercontent {
+        position: relative;
+        height: 295px;
+        max-width: 550px;
+        background: #ECECEC none repeat scroll 0% 0%;
+    }
+    
+    .mvcalender .mvcweekdays {
+        background: #BBBBBB;
+    }
+    
+    .mvcalender .mvcheader {
+        
+    }
+    
+    .mvcalender .mvcweekday {
+        float: left;
+        width: 14.28%;
+        background: #EEE
+    }
+    
+    .mvcday {
+        float: left; 
+        width: 14.28%;
+        height: 14.35%;
+        background: #DDDDDD;	box-shadow: 0px 0px 2px 0px #000000;
+        cursor: pointer;
+    }
+    
+    .mvcdaybefore {
+        background: #FFF none repeat scroll 0% 0%;
+        box-shadow: 0px 0px 2px 0px #000;
+        color: #A4A4A4;
+    }
+    
+    .mvctoday {
+        background: #CCC none repeat scroll 0% 0%;
+    }
+    
+    .mvcday:hover {
+    position: relative;
+animation:mydaytop 0.2s;
+            -moz-animation:mydaytop 0.2s; /* Firefox */
+            -webkit-animation:mydaytop 0.2s; /* Safari and Chrome */
+            top: -4px;
+    }
+    
+    @keyframes mydaytop
+                {
+                from {top: 0px;} 
+                to{top: -4px;} 
+                }
+                @-moz-keyframes mydaytop
+                {
+                from {top: 0px;} 
+                to{top: -4px;} 
+                }
+                @-webkit-keyframes mydaytop
+                {
+                from {top: 0px;} 
+                to{top: -4px;} 
+                }
+    
+    .mvcnotiztyp {
+        float: right;
+        right: 4px;
+        top: 0px;
+        font-size: 18px;
+        width: 27px;
+        text-align: center;
+        height: 27px;
+        
+    }
+    
+    .mvcnotiztypkleina{
+    color: #ff0000;
+    }
+    
+    .mvcnotiztypkleinh{
+    color: #080;
+    }
+    
+    .mvcnotiztypkleins{
+    color: #6f6f6f;
+    }
+    
+    .mvcnotiztypa {
+    color: rgba(255, 0, 0, 1);
+    }
+    
+    .mvcnotiztyph {
+    color: rgba(0, 136, 0, 1);
+    }
+    
+    .mvcnotiztyps {
+    color: rgba(0, 0, 0, 1);
+    }
+    
+    .focused {
+    position: relative;
+    min-width: 14.28%;
+    top: -4px;
+    background: #fff7cb;
+    }
+
+
+    .mvceintrag {
+        margin: 10px 10px;
+        padding: 5px 10px;
+        background: #FFF;
+        min-height: 31px;
+    -webkit-box-shadow: 0px 0px 8px -6px black;
+       -moz-box-shadow: 0px 0px 8px -6px black;
+            box-shadow: 0px 0px 8px -6px black;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #d9d9d9;
+        overflow: auto;
+    }    
+
+    .backmonth {
+    float: left;
+    margin-left: 5px;
+    cursor: pointer;
+    }
+    
+    .forwardmonth {
+    float: right;
+    margin-right: 5px;
+    cursor: pointer;
+    }
+    
+    .mvccontent {
+    position: relative;
+    background: #ECECEC;
+    border-radius: 0px 0px 5px 5px;
+    text-align: left;
+    word-wrap: break-word;
+    padding: 0px, 0px, 0px, 4px;
+    height: 93.2%;
+    overflow-y: auto;
+    }
+    
+    .mvccontentcontainer {
+        position: relative;
+        float: left;
+    }
+    
+    .mvccontentfach {
+        cursor: pointer;
+        color: #333;
+        padding-bottom: 5px;
+    }
+    
+    .mvccontentfach:hover {
+        color: #07F;
+    }
+    
+    .mvccontentfachdeleted {
+        color: #333;
+        padding-bottom: 5px;
+    }
+    
+    
+    .mvccontentdatum {
+        background: #fff;
+        font-size: 13px;
+        padding-top: 5px;
+        padding-bottom: 2px;
+        float: left;
+        width: 100%;
+        text-align: center;
+        -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.51);
+           -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.51);
+                box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.51);
+    }
+    
+    .mvccontentbeschreibung {
+        font-size: 14px;
+        width:100%;
+        float:left;
+    }
+
+    .mvcontentfooter {
+       padding: 8px;
+       overflow: auto;
+    }
+    
+    .mvccontentdeleted {
+        width: 45%;
+        float: left;
+        text-align: center;
+        font-size: 12px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .mvccontenthistory {
+        width: 45%;
+        float: left;
+        text-align: center;
+        font-size: 12px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    
+    .eintragsstift {
+   /* background: url(images/penciltrans.png) no-repeat 50% 25%;
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+    background-size: 26px; */
+    cursor: pointer;
+    }
+
+    .mvcnocontent {
+    display: table;
+    margin: 0 auto;
+    margin-top: 48px;
+    text-align: center;
+    }
+    
+    .mvcpartyimg {
+    background: url(calendarimg/party.png) no-repeat 50% 25%;
+    height: 85px;
+    background-size: 35px;
+    cursor: pointer;
+    }
+    
+    .mvcloadingimg {
+    background: url(calendarimg/loading.gif) no-repeat 50% 25%;
+    height: 35px;
+    background-size: 35px;
+    }
+
+    .mvctabs {
+    height: 20px;
+    font-size: 8pt;
+    }
+    
+    .mvctabstyle {
+    height: 20px;
+    float: left;
+    width: 20%;
+    cursor: pointer;
+    padding-top: 2px;
+    background-color: white;
+    }
+    
+    .mvctab {
+    background: #fff;
+    color: #929292;;
+    }
+    
+    .mvctabactive {
+    font-size: 11px;
+    background: #fff;
+    color: #000;
+    }
+    
+    .balloon {
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    }
+    
+    .spikes {
+    background: url(calendarimg/spikes.png) repeat-x 58% 25%;
+    height: 14px;
+    background-size: 14px;
+    margin-top: 5px;
+    }
+
+    .gamescore {
+    float: left; 
+    margin-left: 4px;
+    padding-top: 2px;
+    }
+    
+    .gamelives {
+    float: right; 
+    margin-right: 4px;
+    padding-top: 2px;
+    }
+    
+    .gametext {
+    margin-left:auto; 
+    margin-right:auto;
+    padding-top: 2px;
+    }
+    
+    .gamestage {
+    position:absolute;
+    bottom: 2px;
+    right: 2px;
+    }
+    

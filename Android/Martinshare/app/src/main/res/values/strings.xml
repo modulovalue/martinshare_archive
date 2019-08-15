@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Martinshare</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="save">Speichern</string>
+    <string name="change">Ändern</string>
+    <string name="refresh">Aktualisieren</string>
+    <string name="title_activity_main_activity2">MainActivity2</string>
+    <string name="title_activity_login_screen">LoginScreen</string>
+    <string name="SplashName">Martinshare</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_activity_swipe">SwipeActivity</string>
+    <string name="title_activity_calendar">CalendarActivity</string>
+    <string name="login_footer_text">www.martinshare.com</string>
+    <string name="opendrawer">DEBUGübersicht</string>
+    <string name="closedrawe">DEBUGübersicht</string>
+    <string name="h">Hausaufgabe</string>
+    <string name="a">Arbeitstermin</string>
+    <string name="s">Sonstiges</string>
+    <string name="today">Heute</string>
+    <string name="tomorrow">Morgen</string>
+    <string name="overmorrow">Übermorgen</string>
+
+
+    <string name="projectid">241805005133</string>
+
+
+    <string-array name="month_names">
+        <item>Null</item>
+        <item>Januar</item>
+        <item>Februar</item>
+        <item>März</item>
+        <item>April</item>
+        <item>Mai</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>August</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Dezember</item>
+    </string-array>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logout_string">Logout</string>
+    <string name="next_month_string">Nächster Monat</string>
+    <string name="prev_month_string">Vorheriger Monat</string>
+    <string name="title_activity_eintragen">Eintragen</string>
+    <string name="artDesEintrags">Art</string>
+    <string name="title_activity_stundenplan">StundenplanActivity</string>
+    <string name="title_activity_vertretungsplan">Vertretungsplan</string>
+
+</resources>
